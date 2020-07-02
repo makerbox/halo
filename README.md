@@ -29,7 +29,7 @@ Version 3.0.0
 <p>:point_up: get all the requirements</p>
 <p>✌️ fork into your new project</p>
 <p>✨ create a new site with Local</p>
-<p>👯 clone LC3 from your site's app/public directory</p>
+<p>👯 "clone" into the app/public directory by adding the remote, fetching, then pulling (regular cloning won't work)</p>
 <p>:ok_hand: run `npm install`</p>
 
 ## Core competencies
