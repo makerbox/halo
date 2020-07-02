@@ -1,10 +1,9 @@
 # LAUNCHCORE
 WordPress development framework for Five By Five Global
-based on WP Distillery which is based on Scotch Box
 
-Version 2.0.0
-191125
-(using fbf/lc2 box)
+Version 3.0.0
+200202
+(using Local for local development)
 
 ## Features
 - WordPress
@@ -25,15 +24,13 @@ Version 2.0.0
 
 ## Requirements
 - Node https://nodejs.org/en/download/
-- VirtualBox https://www.virtualbox.org/wiki/Downloads
-- Vagrant https://www.vagrantup.com/downloads.html
 
 ## Installation
 <p>:point_up: get all the requirements</p>
-<p>:point_right: fork into your new project</p>
-<p>:point_down: clone to your local machine</p>
-<p>:metal: run `launch` (on mac run `bash launch.sh`)</p>
-<p>:ok_hand: Visit http://55.5.5.5</p>
+<p>:✌️: fork into your new project</p>
+<p>:✨: create a new site with Local</p>
+<p>:👯: clone LC3 from your site's app/public directory</p>
+<p>:ok_hand: run `npm install`</p>
 
 ## Core competencies
 - As we build more components etc, this list will grow.
