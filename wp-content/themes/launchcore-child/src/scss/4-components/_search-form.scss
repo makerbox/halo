@@ -1,0 +1,26 @@
+// SCSS - components > search form
+
+.c-search-form{
+	button{
+		background: none;
+		border: none;
+		height: 100%;
+		width: 2em;
+		position: relative;
+	}
+	svg{
+		height: 100%;
+		width: 100%;
+		fill: $s-color__grey;
+		stroke: $s-color__grey;
+	}
+	input[type="search"]{
+		border: none;
+		background: $s-color__grey;
+		height: 2em;
+		padding-left: 1em;
+		&::placeholder{
+			color: $s-color__red;
+		}
+	}
+}

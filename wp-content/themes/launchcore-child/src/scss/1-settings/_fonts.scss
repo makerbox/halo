@@ -1,0 +1,14 @@
+//SCSS - settings > fonts
+
+@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
+
+*, li, p, h1, h2, h3{
+	font-family: 'Lexend Deca', sans-serif;
+}
+
+body{
+	font-size: 10px;
+	@include s-responsive__tablet-up{
+		font-size: 16px;	
+	}
+}

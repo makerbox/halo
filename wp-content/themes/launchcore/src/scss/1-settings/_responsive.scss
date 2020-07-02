@@ -1,0 +1,26 @@
+// SCSS - settings > responsive
+
+$s-breakpoint__mobile: 700px;
+$s-breakpoint__tablet: 1200px;
+$s-breakpoint__desktop: 1440px;
+
+
+
+@mixin s-responsive__mobile-up{
+	@media screen and (min-width: $s-breakpoint__mobile) and (min-device-width: $s-breakpoint__mobile){
+		@content;
+	}
+}
+
+
+@mixin s-responsive__tablet-up{
+	@media screen and (min-width: $s-breakpoint__tablet) and (min-device-width: $s-breakpoint__tablet){
+		@content;
+	}
+}
+
+@mixin s-responsive__desktop-up{
+	@media screen and (min-width: $s-breakpoint__desktop) and (min-device-width: $s-breakpoint__desktop){
+		@content;
+	}
+}

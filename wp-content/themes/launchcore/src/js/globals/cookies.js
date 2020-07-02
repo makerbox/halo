@@ -1,0 +1,1 @@
+// js > globals > cookies
