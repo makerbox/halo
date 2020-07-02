@@ -95,34 +95,15 @@ Thumbs.db
 *.tar
 *.zip
 
-
-!launch.bat
 /wp-content/index.php
 /wp-content/upgrade/
 /wp-content/uploads/
 /wp-content/mu-plugins/
-
-# ignore plugins, because wp distillery will install them for us
-# /wp-content/plugins/*
-# on second thought, don't ignore plugins. What about your blocks?
-
-
-# don't ignore babel config
 !.babelrc
-
-
-# ignore these plugins from the core
 /wp-content/plugins/hello.php
 /wp-content/plugins/akismet/
-
-# ignore specific themes
 /wp-content/themes/twenty*/
-
-# ignore node/grunt dependency directories
+/wp-content/themes/index.php
+/wp-content/index.php
+/wp-content/plugins/index.php
 node_modules/
-
-# ignore vagrant
-.vagrant
-vagrant.local.yml
-# don't ingnore Vagrantfile
-!Vagrantfile
