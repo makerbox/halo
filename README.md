@@ -30,7 +30,7 @@ Version 3.0.0
 <p>:point_up: get all the requirements</p>
 <p>✌️ fork into your new project</p>
 <p>✨ create a new site with Local</p>
-<p>👯 "clone" into the app/public directory by adding the remote, fetching, then pulling (regular cloning won't work) see the git section below if you need further detail</p>
+<p>👯 "clone" into the app/public directory - see the git section below for details</p>
 <p>:ok_hand: run `npm install`</p>
 <p>:metal: change the theme to LaunchCore Child</p>
 
