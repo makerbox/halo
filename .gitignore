@@ -95,7 +95,6 @@ Thumbs.db
 *.tar
 *.zip
 
-/wp-content/index.php
 /wp-content/upgrade/
 /wp-content/uploads/
 /wp-content/mu-plugins/
