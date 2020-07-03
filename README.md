@@ -24,6 +24,7 @@ Version 3.0.0
 
 ## Requirements
 - Node https://nodejs.org/en/download/
+- Local https://localwp.com/
 
 ## Installation
 <p>:point_up: get all the requirements</p>
@@ -31,6 +32,7 @@ Version 3.0.0
 <p>✨ create a new site with Local</p>
 <p>👯 "clone" into the app/public directory by adding the remote, fetching, then pulling (regular cloning won't work)</p>
 <p>:ok_hand: run `npm install`</p>
+<p>:metal: change the theme to LaunchCore Child</p>
 
 ## Core competencies
 - As we build more components etc, this list will grow.
