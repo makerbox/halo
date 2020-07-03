@@ -41,6 +41,7 @@ This will initialize the local repository for you.
 Make sure you have a forked version of LaunchCore. This will ensure you don't accidentally do anything to the source.
 Once done, run `git remote add origin [your forked repo URL]` to add the LaunchCore git repo as a remote.
 After your remote is set up, you can simply run `git fetch` and then `git pull` to get LaunchCore :)
+"why not git clone?" - unfortunately git won't let you clone into a non-empty directory.
 
 ## Core competencies
 - As we build more components etc, this list will grow.
