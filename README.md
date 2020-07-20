@@ -28,8 +28,8 @@ Version 3.0.0
 
 ## Installation
 <p>:point_up: get all the requirements</p>
-<p>✌️ fork into a new project and change the name</p>
-<p>✨ create a new site with Local</p>
+<p>✌️ fork into a new project (change the name and path to your new site)</p>
+<p>✨ create a new site with Local (or pull existing with WP Engine connection)</p>
 <p>👯 "clone" into the app/public directory - see the git section below for details</p>
 <p>:ok_hand: run `npm install`</p>
 <p>:metal: change the theme to LaunchCore Child</p>
