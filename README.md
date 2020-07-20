@@ -76,6 +76,7 @@ ALWAYS follow the coding standards outlined in the LaunchCore project Wiki. Prim
 
 ## Troubleshooting
 - `npm install` failing? You may have an old version of node. For Windows users, follow these steps: https://github.com/felixrieseberg/npm-windows-upgrade. Mac users, just bang in this command: `brew update && brew upgrade node && npm update -g npm`.
+- If you find Local gives you grief, it may be due to the directory of the site. Try using the default directory. Often using a drive that isn't the same as your installation can have weird effects.
 - If all else fails, ask the LaunchCore slack channel.
 
 ## More
