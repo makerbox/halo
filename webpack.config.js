@@ -12,7 +12,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'wp-content/themes/[name]/dist/bundle.css',
+      filename: './wp-content/themes/[name]/dist/bundle.css',
     }),
     new UglifyJSPlugin(),
     new webpack.ProvidePlugin({
