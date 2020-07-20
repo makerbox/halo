@@ -28,7 +28,7 @@ Version 3.0.0
 
 ## Installation
 <p>:point_up: get all the requirements</p>
-<p>✌️ fork into your new project</p>
+<p>✌️ fork into a new project and change the name</p>
 <p>✨ create a new site with Local</p>
 <p>👯 "clone" into the app/public directory - see the git section below for details</p>
 <p>:ok_hand: run `npm install`</p>
