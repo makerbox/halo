@@ -12,7 +12,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: './wp-content/themes/[name]/dist/bundle.css',
+      filename: 'wp-content/themes/[name]/dist/bundle.css',
     }),
     new UglifyJSPlugin(),
     new webpack.ProvidePlugin({
@@ -21,7 +21,7 @@ module.exports = {
     })
   ],
   output: {
-    path: path.resolve(__dirname, '/'),
+    path: path.resolve(__dirname),
     filename: 'wp-content/themes/[name]/dist/bundle.min.js',
   },
   module: {
@@ -31,23 +31,16 @@ module.exports = {
         use:[
           MiniCssExtractPlugin.loader,
           {
-            loader: 'css-loader',
-            options: {
-              sourceMap: true
-            }
+            loader: 'css-loader'
           },
           {
             loader: 'postcss-loader',
             options: {
-              plugins: () => [autoprefixer()],
-              sourceMap: true
+              plugins: () => [autoprefixer()]
             }
           },
           {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true
-            }
+            loader: 'sass-loader'
           }
         ]
       },
@@ -57,8 +50,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env'],
-            sourceMap: true
+            presets: ['@babel/preset-env']
           }
         }
       },
