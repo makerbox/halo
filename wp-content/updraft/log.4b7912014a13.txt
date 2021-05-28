@@ -1,0 +1,215 @@
+0000.001 (0) Opened log file at time: Thu, 31 Oct 2019 23:52:03 +0000 on http://55.5.5.5
+0000.004 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.16.17 WP: 5.2.4 PHP: 7.3.7-2+ubuntu16.04.1+deb.sury.org+1 (fpm-fcgi, Linux ubuntu-xenial 4.4.0-166-generic #195-Ubuntu SMP Tue Oct 1 09:35:25 UTC 2019 x86_64) MySQL: 5.7.27-0ubuntu0.16.04.1 WPLANG: en_US Server: nginx/1.10.3 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 4.2M | 2M) multisite: N openssl: OpenSSL 1.1.1c  28 May 2019 mcrypt: N LANG:  ZipArchive::addFile: Y
+0000.007 (0) Free space on disk containing Updraft's temporary directory: 775948 MB
+0000.013 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.064 (0) Semaphore (fd, wp_options) being initialised
+0000.069 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.103 (0) Set semaphore last lock (fd) time to 2019-10-31 23:52:04
+0000.104 (0) Semaphore lock (fd) complete
+0000.107 (0) Backup run: resumption=0, nonce=4b7912014a13, file_nonce=4b7912014a13 begun at=1572565923 (1s ago), job type=backup
+0000.110 (0) Scheduling a resumption (1) after 300 seconds (1572566224) in case this run gets aborted
+0000.138 (0) Checking if we have a zip executable available
+0000.141 (0) Creation of backups of directories: beginning
+0000.148 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0002.872 (0) Total entities for the zip file: 648 directories, 3791 files (0 skipped as non-modified), 48.9 MB
+0002.917 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0002.943 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0002.991 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0003.014 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0003.037 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0003.039 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (9.5 MB, 3791 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0009.927 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 600 files added (on-disk size: 4662.9 KB)
+0009.945 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 700 files added (on-disk size: 4662.9 KB)
+0009.959 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 800 files added (on-disk size: 4662.9 KB)
+0009.974 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 900 files added (on-disk size: 4662.9 KB)
+0009.987 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 1000 files added (on-disk size: 4662.9 KB)
+0009.989 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.9 MB, 3791 files batched, 501 (1002) added so far); re-opening (prior size: 4662.9 KB)
+0011.232 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 1100 files added (on-disk size: 5609.4 KB)
+0011.271 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 1200 files added (on-disk size: 5609.4 KB)
+0011.308 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 1300 files added (on-disk size: 5609.4 KB)
+0011.335 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 1400 files added (on-disk size: 5609.4 KB)
+0011.355 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 1500 files added (on-disk size: 5609.4 KB)
+0011.356 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (3.8 MB, 3791 files batched, 501 (1503) added so far); re-opening (prior size: 5609.4 KB)
+0013.683 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 1600 files added (on-disk size: 6984.6 KB)
+0013.716 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 1700 files added (on-disk size: 6984.6 KB)
+0013.750 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 1800 files added (on-disk size: 6984.6 KB)
+0013.774 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 1900 files added (on-disk size: 6984.6 KB)
+0013.795 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 2000 files added (on-disk size: 6984.6 KB)
+0013.797 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (17.4 MB, 3791 files batched, 501 (2004) added so far); re-opening (prior size: 6984.6 KB)
+0017.186 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 2100 files added (on-disk size: 11804 KB)
+0017.218 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 2200 files added (on-disk size: 11804 KB)
+0017.248 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 2300 files added (on-disk size: 11804 KB)
+0017.279 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 2400 files added (on-disk size: 11804 KB)
+0017.306 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 2500 files added (on-disk size: 11804 KB)
+0017.309 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.3 MB, 3791 files batched, 501 (2505) added so far); re-opening (prior size: 11804 KB)
+0019.845 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 2600 files added (on-disk size: 12614.2 KB)
+0019.874 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 2700 files added (on-disk size: 12614.2 KB)
+0019.905 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 2800 files added (on-disk size: 12614.2 KB)
+0019.925 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 2900 files added (on-disk size: 12614.2 KB)
+0019.946 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 3000 files added (on-disk size: 12614.2 KB)
+0019.948 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (2.2 MB, 3791 files batched, 501 (3006) added so far); re-opening (prior size: 12614.2 KB)
+0021.697 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 3100 files added (on-disk size: 13344.3 KB)
+0021.727 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 3200 files added (on-disk size: 13344.3 KB)
+0021.754 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 3300 files added (on-disk size: 13344.3 KB)
+0021.774 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 3400 files added (on-disk size: 13344.3 KB)
+0021.795 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 3500 files added (on-disk size: 13344.3 KB)
+0021.797 (0) Adding batch to zip file (UpdraftPlus_ZipArchive): over 500 files added on this batch (9.3 MB, 3791 files batched, 501 (3507) added so far); re-opening (prior size: 13344.3 KB)
+0024.721 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 3600 files added (on-disk size: 16161.5 KB)
+0024.746 (0) Zip: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip.tmp: 3700 files added (on-disk size: 16161.5 KB)
+0026.451 (0) Created plugins zip (0) - 16648.9 KB in 26.3 s (633.1 KB/s) (sha1: 15a0304550e26ffcd318cfc539848caf2a857db2, sha256: 0aee4bd5ded40bf6f696b25512931150c093624331706a07acfa3f31b643a1a8)
+0026.460 (0) Beginning creation of dump of themes (split every: 400 MB)
+0026.518 (0) Total entities for the zip file: 40 directories, 99 files (0 skipped as non-modified), 2.4 MB
+0027.206 (0) Created themes zip (0) - 1982.5 KB in 0.7 s (2676.7 KB/s) (sha1: 3f44844d5dc81243f0e4a7257b742ad0fdaa9ecb, sha256: 39d8f7fff2a542ac7c95b2666c5af57719dbc82f09d4fa0e19d6cfb9b7d49c2c)
+0027.211 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0027.212 (0) Looking for candidates to backup in: /var/www/public/wp-content/uploads
+0027.212 (0) finding files: 2019: adding to list (1)
+0027.213 (0) finding files: Asset-1@4x-150x150.png: adding to list (2)
+0027.214 (0) finding files: Asset-1@4x-226x300.png: adding to list (3)
+0027.214 (0) finding files: Asset-1@4x-600x400.png: adding to list (4)
+0027.215 (0) finding files: Asset-1@4x-600x600.png: adding to list (5)
+0027.215 (0) finding files: Asset-1@4x-770x1024.png: adding to list (6)
+0027.216 (0) finding files: Asset-1@4x.png: adding to list (7)
+0027.217 (0) finding files: Asset-2@4x-150x150.png: adding to list (8)
+0027.217 (0) finding files: Asset-2@4x-231x300.png: adding to list (9)
+0027.218 (0) finding files: Asset-2@4x-600x400.png: adding to list (10)
+0027.218 (0) finding files: Asset-2@4x-600x600.png: adding to list (11)
+0027.219 (0) finding files: Asset-2@4x-789x1024.png: adding to list (12)
+0027.220 (0) finding files: Asset-2@4x.png: adding to list (13)
+0027.220 (0) finding files: Asset-3@4x-150x150.png: adding to list (14)
+0027.221 (0) finding files: Asset-3@4x-238x300.png: adding to list (15)
+0027.222 (0) finding files: Asset-3@4x-600x400.png: adding to list (16)
+0027.222 (0) finding files: Asset-3@4x-600x600.png: adding to list (17)
+0027.223 (0) finding files: Asset-3@4x-813x1024.png: adding to list (18)
+0027.223 (0) finding files: Asset-3@4x.png: adding to list (19)
+0027.224 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0027.242 (0) Total entities for the zip file: 2 directories, 36 files (0 skipped as non-modified), 0.6 MB
+0027.531 (0) Created uploads zip (0) - 584.7 KB in 0.3 s (1921.6 KB/s) (sha1: ca05313ef330c34b9a9c301433ca9a12ecf5661b, sha256: 6f4fafdece55d9bfce94a4fc8f14106e9bc8f80bdafda262265cc703ab5cb5c5)
+0027.539 (0) Beginning backup of other directories found in the content directory (index: 0)
+0027.545 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0027.546 (0) Looking for candidates to backup in: /var/www/public/wp-content
+0027.547 (0) finding files: index.php: adding to list (1)
+0027.548 (0) finding files: plugins: skipping: this is the plugins directory
+0027.549 (0) finding files: themes: skipping: this is the themes directory
+0027.549 (0) finding files: updraft: skipping: this is the updraft directory
+0027.550 (0) finding files: upgrade: skipping: excluded by options
+0027.551 (0) finding files: uploads: skipping: this is the uploads directory
+0027.592 (0) Total entities for the zip file: 0 directories, 1 files (0 skipped as non-modified), 0 MB
+0027.599 (0) Created others zip (0) - 0.1 KB in 0 s (13.6 KB/s) (sha1: ee03b636a9ba9d2b37a9e61c0af1e742c2a9db8d, sha256: 1f9dd7c86daf340aa1af781a4e5168b3a39c3a5416368700cc9297bacf039ce6)
+0027.605 (0) Saving backup status to database (elements: 8)
+0027.606 (0) Beginning creation of database dump (WordPress DB)
+0027.609 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0027.635 (0) Binary mysqldump: error (code: 2)
+0027.642 (0) Table wp_options: Total expected rows (approximate): 194
+0027.669 (0) Table wp_options: Total rows added: 194 in 0.03 seconds
+0027.672 (0) Table wp_options: finishing file (backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_options.table.gz - 173.7 KB)
+0027.677 (0) Table wp_users: Total expected rows (approximate): 0
+0027.679 (0) Table wp_users: Total rows added: 1 in 0.00 seconds
+0027.682 (0) Table wp_users: finishing file (backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_users.table.gz - 0.6 KB)
+0027.685 (0) Table wp_usermeta: Total expected rows (approximate): 39
+0027.687 (0) Table wp_usermeta: Total rows added: 40 in 0.00 seconds
+0027.689 (0) Table wp_usermeta: finishing file (backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_usermeta.table.gz - 1.5 KB)
+0027.712 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0027.714 (0) Table wp_commentmeta: Total rows added: 0 in 0.00 seconds
+0027.716 (0) Table wp_commentmeta: finishing file (backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_commentmeta.table.gz - 0.4 KB)
+0027.722 (0) Table wp_comments: Total expected rows (approximate): 0
+0027.728 (0) Table wp_comments: Total rows added: 1 in 0.00 seconds
+0027.730 (0) Table wp_comments: finishing file (backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_comments.table.gz - 0.7 KB)
+0027.736 (0) Table wp_links: Total expected rows (approximate): 0
+0027.738 (0) Table wp_links: Total rows added: 0 in 0.00 seconds
+0027.741 (0) Table wp_links: finishing file (backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_links.table.gz - 0.4 KB)
+0027.746 (0) Table wp_postmeta: Total expected rows (approximate): 126
+0027.749 (0) Table wp_postmeta: Total rows added: 139 in 0.00 seconds
+0027.751 (0) Table wp_postmeta: finishing file (backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_postmeta.table.gz - 3 KB)
+0027.757 (0) Table wp_posts: Total expected rows (approximate): 36
+0027.760 (0) Table wp_posts: Total rows added: 36 in 0.00 seconds
+0027.762 (0) Table wp_posts: finishing file (backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_posts.table.gz - 4.7 KB)
+0027.767 (0) Table wp_term_relationships: Total expected rows (approximate): 3
+0027.769 (0) Table wp_term_relationships: Total rows added: 4 in 0.00 seconds
+0027.771 (0) Table wp_term_relationships: finishing file (backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_term_relationships.table.gz - 0.4 KB)
+0027.777 (0) Table wp_term_taxonomy: Total expected rows (approximate): 0
+0027.778 (0) Table wp_term_taxonomy: Total rows added: 2 in 0.00 seconds
+0027.780 (0) Table wp_term_taxonomy: finishing file (backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_term_taxonomy.table.gz - 0.4 KB)
+0027.785 (0) Table wp_termmeta: Total expected rows (approximate): 0
+0027.786 (0) Table wp_termmeta: Total rows added: 0 in 0.00 seconds
+0027.788 (0) Table wp_termmeta: finishing file (backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_termmeta.table.gz - 0.4 KB)
+0027.794 (0) Table wp_terms: Total expected rows (approximate): 0
+0027.795 (0) Table wp_terms: Total rows added: 2 in 0.00 seconds
+0027.797 (0) Table wp_terms: finishing file (backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_terms.table.gz - 0.4 KB)
+0027.801 (0) Table wp_yoast_seo_links: Total expected rows (approximate): 0
+0027.803 (0) Table wp_yoast_seo_links: Total rows added: 0 in 0.00 seconds
+0027.805 (0) Table wp_yoast_seo_links: finishing file (backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_yoast_seo_links.table.gz - 0.4 KB)
+0027.809 (0) Table wp_yoast_seo_meta: Total expected rows (approximate): 4
+0027.811 (0) Table wp_yoast_seo_meta: Total rows added: 5 in 0.00 seconds
+0027.812 (0) Table wp_yoast_seo_meta: finishing file (backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_yoast_seo_meta.table.gz - 0.4 KB)
+0027.817 (0) Table wp_rank_math_404_logs: Total expected rows (approximate): 0
+0027.819 (0) Table wp_rank_math_404_logs: Total rows added: 0 in 0.00 seconds
+0027.821 (0) Table wp_rank_math_404_logs: finishing file (backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_rank_math_404_logs.table.gz - 0.4 KB)
+0027.826 (0) Table wp_rank_math_internal_links: Total expected rows (approximate): 0
+0027.827 (0) Table wp_rank_math_internal_links: Total rows added: 0 in 0.00 seconds
+0027.828 (0) Table wp_rank_math_internal_links: finishing file (backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_rank_math_internal_links.table.gz - 0.4 KB)
+0027.833 (0) Table wp_rank_math_internal_meta: Total expected rows (approximate): 0
+0027.834 (0) Table wp_rank_math_internal_meta: Total rows added: 0 in 0.00 seconds
+0027.836 (0) Table wp_rank_math_internal_meta: finishing file (backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_rank_math_internal_meta.table.gz - 0.3 KB)
+0027.841 (0) Table wp_rank_math_redirections: Total expected rows (approximate): 0
+0027.842 (0) Table wp_rank_math_redirections: Total rows added: 0 in 0.00 seconds
+0027.844 (0) Table wp_rank_math_redirections: finishing file (backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_rank_math_redirections.table.gz - 0.4 KB)
+0027.849 (0) Table wp_rank_math_redirections_cache: Total expected rows (approximate): 0
+0027.850 (0) Table wp_rank_math_redirections_cache: Total rows added: 0 in 0.00 seconds
+0027.852 (0) Table wp_rank_math_redirections_cache: finishing file (backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_rank_math_redirections_cache.table.gz - 0.4 KB)
+0027.856 (0) Table wp_rank_math_sc_analytics: Total expected rows (approximate): 0
+0027.858 (0) Table wp_rank_math_sc_analytics: Total rows added: 0 in 0.00 seconds
+0027.860 (0) Table wp_rank_math_sc_analytics: finishing file (backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_rank_math_sc_analytics.table.gz - 0.4 KB)
+0027.865 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_options.table.gz (1/20): adding to final database dump
+0027.895 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_users.table.gz (2/20): adding to final database dump
+0027.898 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_usermeta.table.gz (3/20): adding to final database dump
+0027.902 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_commentmeta.table.gz (4/20): adding to final database dump
+0027.906 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_comments.table.gz (5/20): adding to final database dump
+0027.908 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_links.table.gz (6/20): adding to final database dump
+0027.910 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_postmeta.table.gz (7/20): adding to final database dump
+0027.913 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_posts.table.gz (8/20): adding to final database dump
+0027.915 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_term_relationships.table.gz (9/20): adding to final database dump
+0027.917 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_term_taxonomy.table.gz (10/20): adding to final database dump
+0027.918 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_termmeta.table.gz (11/20): adding to final database dump
+0027.920 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_terms.table.gz (12/20): adding to final database dump
+0027.922 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_yoast_seo_links.table.gz (13/20): adding to final database dump
+0027.924 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_yoast_seo_meta.table.gz (14/20): adding to final database dump
+0027.927 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_rank_math_404_logs.table.gz (15/20): adding to final database dump
+0027.929 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_rank_math_internal_links.table.gz (16/20): adding to final database dump
+0027.932 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_rank_math_internal_meta.table.gz (17/20): adding to final database dump
+0027.934 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_rank_math_redirections.table.gz (18/20): adding to final database dump
+0027.936 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_rank_math_redirections_cache.table.gz (19/20): adding to final database dump
+0027.938 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-db-table-wp_rank_math_sc_analytics.table.gz (20/20): adding to final database dump
+0027.942 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-db.gz: finished writing out complete database file (168 KB)
+0027.962 (0) Total database tables backed up: 20 (backup_2019-10-31-1952_LaunchKit_4b7912014a13-db.gz, size: 188143, sha1: 93f882794efa0de0aa58769b4390f1cd62a4e605, sha256: 7652c4476614608b403cbf9d4d9f9a2532fa509b6b32e89ac47cc2703d37d268)
+0027.966 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0027.967 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0027.968 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0027.968 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-others.zip: others: This file has not yet been successfully uploaded: will queue
+0027.969 (0) backup_2019-10-31-1952_LaunchKit_4b7912014a13-db.gz: db: This file has not yet been successfully uploaded: will queue
+0027.970 (0) Saving backup history. Total backup size: 18.9 MB
+0027.981 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0027.984 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0027.985 (0) No remote despatch: user chose no remote backup service
+0027.985 (0) Recording as successfully uploaded: backup_2019-10-31-1952_LaunchKit_4b7912014a13-plugins.zip
+0027.987 (0) Recording as successfully uploaded: backup_2019-10-31-1952_LaunchKit_4b7912014a13-themes.zip
+0027.988 (0) Recording as successfully uploaded: backup_2019-10-31-1952_LaunchKit_4b7912014a13-uploads.zip
+0027.990 (0) Recording as successfully uploaded: backup_2019-10-31-1952_LaunchKit_4b7912014a13-others.zip
+0027.992 (0) Recording as successfully uploaded: backup_2019-10-31-1952_LaunchKit_4b7912014a13-db.gz
+0027.994 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0027.996 (0) Number of backup sets in history: 1; groups (db): 1
+0027.996 (0) Examining (for databases) backup set with group_id=0, nonce=4b7912014a13, datestamp=1572565923 (Oct 31 2019 23:52:03)
+0027.997 (0) This backup set is the backup set just made, so will not be deleted.
+0027.997 (0) Number of backup sets in history: 1; groups (files): 1
+0027.997 (0) Examining (for files) backup set with nonce=4b7912014a13, datestamp=1572565923 (Oct 31 2019 23:52:03)
+0027.997 (0) This backup set is the backup set just made, so will not be deleted.
+0027.998 (0) This backup set is the backup set just made, so will not be deleted.
+0027.998 (0) This backup set is the backup set just made, so will not be deleted.
+0027.999 (0) This backup set is the backup set just made, so will not be deleted.
+0027.999 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0027.999 (0) Retain: saving new backup history (sets now: 1) and finishing retain operation
+0028.001 (0) Resume backup (4b7912014a13, 0): finish run
+0028.003 (0) Decremented the semaphore (fd) by 1
+0028.004 (0) Semaphore (fd) unlocked
+0028.005 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0028.007 (0) No email will/can be sent - the user has not configured an email address.
+0028.008 (0) The backup apparently succeeded and is now complete

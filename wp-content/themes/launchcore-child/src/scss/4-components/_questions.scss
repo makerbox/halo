@@ -1,0 +1,92 @@
+.c-questions__button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	bottom: 2em;
+	right: 1em;
+	border-radius: 50%;
+	width: 25vw;
+	max-width: 150px;
+	max-height: 150px;
+	height: 25vw;
+	background: $s-color__blue;
+	z-index: 2;
+	color: #FFF;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all .25s;
+	flex-direction: column;
+	i{
+		display: block;
+		font-size: 3em;
+		width: 100%;
+		text-align: center;
+		margin-top: 10px;
+	}
+	&:hover{
+		transform: scale(1.1);
+	}
+}
+
+.c-questions__form{
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #FFF;
+	z-index: 3;
+	width: 100vw;
+	height: 100vh;
+	overflow-y: scroll;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	&.is-visible{
+		display: flex;
+	}
+}
+
+
+.c-questions__form--content{
+	display: block;
+	text-align: left;
+	position: absolute;
+	padding: 2em;
+	max-width: 500px;
+	top: 3em;
+	label{
+		margin-bottom: 1em;
+	}
+	textarea{
+		height: 5em;
+	}
+}
+
+.c-questions__form--close{
+	position: absolute;
+	display: block;
+	color: #000;
+	font-size: 2em;
+	top: 0em;
+	right: 0em;
+	cursor: pointer;
+}
+
+.c-questions__form--submit{
+	input{
+		border: none;
+		box-shadow: none;
+		border-radius: 2em;
+		background: $s-color__blue;
+		color: #FFF;
+		padding: 1em 2em;
+		margin-top: 1.5em;
+		transition: all .5s;
+		&:hover{
+			transform: scale(1.1);
+		}
+	}
+}
+
