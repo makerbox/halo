@@ -14,9 +14,13 @@
 
 // 4-components	-----------reusable object groups e.g. navbar
 @import './4-components/navbar';
-@import './4-components/search-form';
 
 // 5-parts	-----------template parts e.g. header
+@import './5-parts/intro';
+@import './5-parts/work';
+@import './5-parts/marquee';
+@import './5-parts/culture';
+@import './5-parts/contact';
 
 // 6-templates	-----------made up of many sections e.g. front-page
 

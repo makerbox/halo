@@ -1,9 +1,13 @@
 <?php
-	get_header();
+	get_header();	
 ?>
-<div class="l-content">
+<div class="t-home">
 	<?php
-		require_once('home-parts/01-intro.php');
+		getPart('home','01-intro');
+		getPart('home','02-work');
+		getPart('home','03-marquee');
+		getPart('home','04-culture');
+		getPart('home','05-contact');
 	?>
 </div>
 <?php

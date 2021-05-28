@@ -73,32 +73,3 @@ ul {
     .c-navbar__hamburger {
       display: none; } }
 
-.c-search-form button {
-  background: none;
-  border: none;
-  height: 100%;
-  width: 2em;
-  position: relative; }
-
-.c-search-form svg {
-  height: 100%;
-  width: 100%;
-  fill: #E4DFDA;
-  stroke: #E4DFDA; }
-
-.c-search-form input[type="search"] {
-  border: none;
-  background: #E4DFDA;
-  height: 2em;
-  padding-left: 1em; }
-  .c-search-form input[type="search"]::-webkit-input-placeholder {
-    color: #C1666B; }
-  .c-search-form input[type="search"]::-moz-placeholder {
-    color: #C1666B; }
-  .c-search-form input[type="search"]:-ms-input-placeholder {
-    color: #C1666B; }
-  .c-search-form input[type="search"]::-ms-input-placeholder {
-    color: #C1666B; }
-  .c-search-form input[type="search"]::placeholder {
-    color: #C1666B; }
-

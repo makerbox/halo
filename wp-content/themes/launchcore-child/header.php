@@ -32,17 +32,6 @@
 		<div class="c-navbar__logo">
 			<?php the_custom_logo(); ?>
 		</div>
-		<div class="c-navbar__right">
-			<div class="c-navbar__menu">
-			</div>
-			<div class="c-navbar__contact">
-				<div class="c-navbar__contact--button c-navbar__contact--phone">
-					<a href="tel:610280076474"><i class="fa fa-phone"></i>+61 02 8007 6474</a>
-				</div>
-				<div class="c-navbar__contact--button c-navbar__contact--email">
-				</div>
-			</div>
-		</div>
 	</div>
 </header>
 <body <?php body_class(); ?>>
