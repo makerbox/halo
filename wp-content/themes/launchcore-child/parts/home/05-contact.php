@@ -1,2 +1,2 @@
-<div class="p-contact">
+<div class="p-home-contact">
 </div>

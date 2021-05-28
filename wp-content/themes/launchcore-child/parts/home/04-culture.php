@@ -1,2 +1,2 @@
-<div class="p-culture">
+<div class="p-home-culture">
 </div>

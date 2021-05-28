@@ -1,2 +1,2 @@
-<div class="p-marquee">
+<div class="p-home-marquee">
 </div>

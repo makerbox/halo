@@ -1,2 +1,2 @@
-<div class="p-work">
+<div class="p-home-work">
 </div>
