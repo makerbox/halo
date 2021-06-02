@@ -1,0 +1,26 @@
+// index.scss - import scss files
+
+// 1-settings	-----------variables and mixins e.g. font sizes
+@import './1-settings/responsive';
+@import './1-settings/colors';
+@import './1-settings/fonts';
+@import './1-settings/spacing';
+
+// 2-elements	-----------HTML elements e.g. body
+@import './2-elements/paragraphs';
+@import './2-elements/lists';
+
+// 3-objects	-----------small pieces that make up components e.g. menu item
+
+// 4-components	-----------reusable object groups e.g. navbar
+@import './4-components/banner';
+
+// 5-parts	-----------template parts e.g. header
+
+
+// 6-templates	-----------made up of many sections e.g. front-page
+@import './6-templates/home';
+
+// 7-vendor	-----------third party styles
+
+// 8-overlords	-----------overrides all other styles

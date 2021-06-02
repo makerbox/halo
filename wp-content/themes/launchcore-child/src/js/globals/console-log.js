@@ -1,0 +1,1 @@
+// JS - globals > console-log

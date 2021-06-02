@@ -1,0 +1,49 @@
+<div class="c-comments">
+	<?php
+	if ( have_comments() ) :
+	global $comments_by_type;
+	$comments_by_type = separate_comments( $comments );
+	if ( ! empty( $comments_by_type['comment'] ) ) :
+	?>
+	<section class="c-comments__list">
+		<h3 class="c-comments__title">
+			<?php comments_number(); ?>		
+		</h3>
+		<?php if ( get_comment_pages_count() > 1 ) : ?>
+			<nav class="c-comments__navigation-above" role="navigation">
+				<div class="c-comments__pagination">
+					<?php paginate_comments_links(); ?>
+				</div>
+			</nav>
+		<?php endif; ?>
+		<ul>
+		<?php wp_list_comments( 'type=comment' ); ?>
+		</ul>
+		<?php if ( get_comment_pages_count() > 1 ) : ?>
+			<nav class="c-comments__navigation-below" role="navigation">
+				<div class="c-comments__pagination">
+					<?php paginate_comments_links(); ?>		
+				</div>
+			</nav>
+		<?php endif; ?>
+	</section>
+	<?php
+	endif;
+	if ( ! empty( $comments_by_type['pings'] ) ) :
+	$ping_count = count( $comments_by_type['pings'] );
+	?>
+	<section class="c-comments__trackbacks">
+		<h3 class="c-comments__title">
+			<?php echo '<span class="ping-count">' . esc_html( $ping_count ) . '</span> ' . esc_html( _nx( 'Trackback or Pingback', 'Trackbacks and Pingbacks', $ping_count, 'comments count', 'blankslate' ) ); ?>
+				
+		</h3>
+		<ul>
+			<?php wp_list_comments( 'type=pings&callback=blankslate_custom_pings' ); ?>
+		</ul>
+	</section>
+	<?php
+	endif;
+	endif;
+	if ( comments_open() ) { comment_form(); }
+	?>
+</div>

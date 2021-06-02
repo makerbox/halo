@@ -1,0 +1,8 @@
+// scss > layout > content
+
+.l-content{
+	margin: auto;
+	margin-top: $s-spacing__navbar;
+	@extend %s-container__max-width;
+	min-height: 100vh;
+}

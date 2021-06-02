@@ -1,0 +1,32 @@
+// index.scss - import scss files
+
+// 0-resets
+@import './0-resets/reset';
+
+// 1-settings
+@import './1-settings/colors';
+@import './1-settings/responsive';
+@import './1-settings/container';
+@import './1-settings/spacing';
+@import './1-settings/fonts';
+
+// 2-elements
+@import './2-elements/list';
+
+// 3-objects
+@import './3-objects/button';
+
+// 4-components
+@import './4-components/navbar';
+
+// 5-parts
+@import './5-parts/header';
+@import './5-parts/content';
+@import './5-parts/footer';
+
+// 6-templates
+@import './6-templates/page';
+
+// 7-vendor
+
+// 8-overlords
