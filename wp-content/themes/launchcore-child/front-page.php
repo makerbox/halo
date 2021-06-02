@@ -14,9 +14,11 @@
 	</div>
 	<div class="t-home__content">
 		<div class="t-home__text">
-			<div class="o-text--heading">
+			<div class="t-home__text--heading">
+				Coming soon
 			</div>
-			<div class="o-text--paragraph">
+			<div class="t-home__text--paragraph">
+				Until then, if you require any information about Halo Mining and our services, please get in touch.
 			</div>
 		</div>
 		<div class="t-home__contact">
