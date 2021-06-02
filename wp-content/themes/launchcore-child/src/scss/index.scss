@@ -13,16 +13,13 @@
 // 3-objects	-----------small pieces that make up components e.g. menu item
 
 // 4-components	-----------reusable object groups e.g. navbar
-@import './4-components/navbar';
+@import './4-components/banner';
 
 // 5-parts	-----------template parts e.g. header
-@import './5-parts/home-intro';
-@import './5-parts/home-work';
-@import './5-parts/home-marquee';
-@import './5-parts/home-culture';
-@import './5-parts/home-contact';
+
 
 // 6-templates	-----------made up of many sections e.g. front-page
+@import './6-templates/home';
 
 // 7-vendor	-----------third party styles
 

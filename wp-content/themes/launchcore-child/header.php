@@ -27,13 +27,6 @@
 	
 	<?php wp_head(); ?>
 </head>
-<header class="p-header">
-	<div class="c-navbar">
-		<div class="c-navbar__logo">
-			<?php the_custom_logo(); ?>
-		</div>
-	</div>
-</header>
 <body <?php body_class(); ?>>
 
 	
