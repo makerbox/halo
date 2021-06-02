@@ -1,6 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Rajdhani&display=swap);
 *, li, p, h1, h2, h3 {
-  font-family: 'Lexend Deca', sans-serif; }
+  font-family: 'Rajdhani', sans-serif; }
 
 body {
   font-size: 10px; }
@@ -59,4 +59,18 @@ ul {
     display: block;
     -o-object-fit: contain;
        object-fit: contain; }
+
+.t-home__text {
+  background: #ae1e1e;
+  color: #FFF;
+  text-align: center;
+  padding: 80px; }
+
+.t-home__text--heading {
+  text-transform: uppercase;
+  font-size: 53px;
+  margin-bottom: .5em; }
+
+.t-home__text--paragraph {
+  font-size: 29px; }
 
