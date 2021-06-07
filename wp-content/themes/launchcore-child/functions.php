@@ -1,7 +1,7 @@
 <?php
 // load bundled scripts from webpack bundle minified
 function load_child_bundled_js(){
-	wp_enqueue_script('child_bundled_js', get_stylesheet_directory_uri() . '/dist/bundle.min.js', false, false ,true);
+	wp_enqueue_script('child_bundled_js', get_stylesheet_directory_uri() . '/dist/bundle.min.js', false, false ,false);
 	$translation_array = array( 'templateUrl' => get_stylesheet_directory_uri() );
 	wp_localize_script( 'child_bundled_js', 'wp_obj', $translation_array );
 	wp_enqueue_style('child_bundled_css', get_stylesheet_directory_uri() . '/dist/bundle.css');
