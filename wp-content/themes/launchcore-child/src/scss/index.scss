@@ -4,24 +4,27 @@
 @import './1-settings/responsive';
 @import './1-settings/colors';
 @import './1-settings/fonts';
-@import './1-settings/spacing';
+@import './1-settings/images';
+@import './1-settings/margins';
 
-// 2-elements	-----------HTML elements e.g. body
-@import './2-elements/paragraphs';
-@import './2-elements/lists';
+// 2-utilities
+@import './2-utilities/center-middle';
+@import './2-utilities/adaptive';
 
-// 3-objects	-----------small pieces that make up components e.g. menu item
+// 3-elements	-----------HTML elements e.g. body
+@import './3-elements/paragraphs';
+@import './3-elements/lists';
 
-// 4-components	-----------reusable object groups e.g. navbar
-@import './4-components/banner';
-@import './4-components/contact-form';
+// 4-objects	-----------small pieces that make up components e.g. menu item
 
-// 5-parts	-----------template parts e.g. header
+// 5-components	-----------reusable object groups e.g. navbar
+@import './5-components/navbar';
 
+// 6-parts	-----------template parts e.g. header
 
-// 6-templates	-----------made up of many sections e.g. front-page
-@import './6-templates/home';
+// 7-templates	-----------made up of many sections e.g. front-page
 
-// 7-vendor	-----------third party styles
+// 8-vendor	-----------third party styles
 
-// 8-overlords	-----------overrides all other styles
+// 9-overlords	-----------overrides all other styles
+@import './9-overlords/wp-block';

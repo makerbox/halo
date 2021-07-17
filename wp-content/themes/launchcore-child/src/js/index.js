@@ -1,7 +1,7 @@
 // index.js - import js files
 
 //components
-import "./components/contact-form.js";
+import "./components/navbar.js";
 
 //templates
 

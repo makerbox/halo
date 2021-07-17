@@ -4,29 +4,31 @@
 @import './0-resets/reset';
 
 // 1-settings
-@import './1-settings/colors';
-@import './1-settings/responsive';
-@import './1-settings/container';
-@import './1-settings/spacing';
-@import './1-settings/fonts';
+// @import './1-settings/colors';
+// @import './1-settings/responsive';
+// @import './1-settings/container';
+// @import './1-settings/spacing';
+// @import './1-settings/fonts';
 
-// 2-elements
-@import './2-elements/list';
+// 2-utilities
+// @import './2-utilities/adaptive';
 
-// 3-objects
-@import './3-objects/button';
+// 3-elements
+// @import './3-elements/list';
 
-// 4-components
-@import './4-components/navbar';
+// 4-objects
+// @import './4-objects/button';
 
-// 5-parts
-@import './5-parts/header';
-@import './5-parts/content';
-@import './5-parts/footer';
+// 5-components
 
-// 6-templates
-@import './6-templates/page';
+// 6-parts
+// @import './6-parts/header';
+// @import './6-parts/content';
+// @import './6-parts/footer';
 
-// 7-vendor
+// 7-templates
+// @import './7-templates/page';
 
-// 8-overlords
+// 8-vendor
+
+// 9-overlords

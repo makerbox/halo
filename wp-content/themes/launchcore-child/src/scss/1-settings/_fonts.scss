@@ -1,14 +1,8 @@
 //SCSS - settings > fonts
 
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@400;600;700&display=swap');
 
-*, li, p, h1, h2, h3{
-	font-family: 'Rajdhani', sans-serif;
-}
 
-body{
-	font-size: 10px;
-	@include s-responsive__tablet-up{
-		font-size: 16px;	
-	}
+html{
+	color: $s-color__black;
 }

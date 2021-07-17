@@ -1,31 +1,13 @@
 <?php
-	get_header();	
+	get_header();
 ?>
-<div class="t-home">
-	<div class="c-banner">
-		<div class="c-banner__background">
-			<img src="">
-		</div>
-		<div class="c-banner__foreground">
-			<div class="c-banner__logo">
-				<img src="">
-			</div>
-		</div>
-	</div>
-	<div class="t-home__content">
-		<div class="t-home__text">
-			<div class="o-text--heading">
-			</div>
-			<div class="o-text--paragraph">
-			</div>
-		</div>
-		<div class="t-home__contact">
-			<div class="c-contact-form">
-			</div>
-		</div>
-	</div>
+<div class="t-page">
 
-	contact form
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<!-- <?php if ( has_post_thumbnail() ) { the_post_thumbnail(); } ?> -->
+<?php the_content(); ?>
+<?php endwhile; endif; ?>
+
 </div>
 <?php
 	get_footer();

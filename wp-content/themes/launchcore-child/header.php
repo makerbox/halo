@@ -3,30 +3,30 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width" />
-
-	<!-- Hotjar Tracking Code for https://fivebyfiveau.wpengine.com/ -->
-	<script>
-	    (function(h,o,t,j,a,r){
-	        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-	        h._hjSettings={hjid:1931798,hjsv:6};
-	        a=o.getElementsByTagName('head')[0];
-	        r=o.createElement('script');r.async=1;
-	        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-	        a.appendChild(r);
-	    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-	</script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-174566580-1"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-174566580-1');
-	</script>
-	
+	<!-- fontawesome (comment out if not used to avoid uneccessary load) -->
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous"> -->
 	<?php wp_head(); ?>
 </head>
+<header>
+	<nav class="c-navbar" data-navbar>
+		<div class="c-navbar__menu" data-menu>
+			<div class="c-navbar__menu--menu">
+				<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+			</div>
+		</div>
+		<div class="c-navbar__inner">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>" rel="home" class="c-navbar__logo">
+				<?php 
+					$custom_logo_id = get_theme_mod( 'custom_logo' );
+					imageHelper($custom_logo_id, 'Halo Mining logo');
+				?>
+			</a>
+			<div class="c-navbar__hamburger" data-menu-toggle>
+				menu
+			</div>
+		</div>
+	</nav>
+</header>
 <body <?php body_class(); ?>>
 
 	

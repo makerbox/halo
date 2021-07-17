@@ -1,0 +1,16 @@
+@mixin u-center{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+@mixin u-middle{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+@mixin u-center-middle{
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}

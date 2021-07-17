@@ -1,0 +1,23 @@
+.c-navbar__menu{
+	display: none;
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: $s-padding__mobile;
+	.is-open &{
+		display: block;
+	}
+}
+
+.c-navbar__mobile--top, .c-navbar__inner{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.c-navbar__inner{
+	padding: $s-padding__mobile;
+}

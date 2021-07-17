@@ -115,7 +115,7 @@ return $count;
 }
 }
 
-// insert FbF favicon
+// insert favicon
 function blog_favicon() { 
 	$favicon = get_template_directory_uri() . '/src/assets/FbF_Favicon.jpg';
 	?>
@@ -124,31 +124,31 @@ function blog_favicon() {
 add_action('wp_head', 'blog_favicon');
 
 // get Bootstrap
-function get_bootstrap(){
-	wp_enqueue_script('bootstrapjs', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js');
-	wp_enqueue_style('bootstrapcss', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
-}
-add_action('wp_enqueue_scripts', 'get_bootstrap');
+// function get_bootstrap(){
+// 	wp_enqueue_script('bootstrapjs', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js');
+// 	wp_enqueue_style('bootstrapcss', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+// }
+// add_action('wp_enqueue_scripts', 'get_bootstrap');
 
 // get Green Sock
-function get_greensock(){
-	wp_enqueue_script('greensock', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js');
-}
-add_action('wp_enqueue_scripts', 'get_greensock');
+// function get_greensock(){
+// 	wp_enqueue_script('greensock', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js');
+// }
+// add_action('wp_enqueue_scripts', 'get_greensock');
 
 // get Slick
-function get_slick(){
-	wp_enqueue_script('slickjs', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js');
-	wp_enqueue_style('slickcss', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
-}
-add_action('wp_enqueue_scripts', 'get_slick');
+// function get_slick(){
+// 	wp_enqueue_script('slickjs', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js');
+// 	wp_enqueue_style('slickcss', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
+// }
+// add_action('wp_enqueue_scripts', 'get_slick');
 
 // get Scroll Magic
-function get_scrollmagic(){
-	wp_enqueue_script('scrollmagicjs', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js');
-	wp_enqueue_script('scrollmagicdebug', '//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js');
-}
-add_action('wp_enqueue_scripts', 'get_scrollmagic');
+// function get_scrollmagic(){
+// 	wp_enqueue_script('scrollmagicjs', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js');
+// 	wp_enqueue_script('scrollmagicdebug', '//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js');
+// }
+// add_action('wp_enqueue_scripts', 'get_scrollmagic');
 
 // load webpack bundles
 function load_bundled_js(){
@@ -174,9 +174,13 @@ function my_myme_types($mime_types){
 };
 add_filter('upload_mimes', 'my_myme_types', 1, 1);
 
-// interpret svg
+// interpret svg without media library
 function svg($name) {
-    $svg = str_replace(["\n", "\r", "\t"], ['', '', ''], file_get_contents(get_stylesheet_directory_uri().'/src/svg/'.$name.'.svg'));
+	$contents = wp_remote_request(get_stylesheet_directory_uri().'/svg/'.$name.'.svg', array(
+		'Authorization' => 'Basic ' . base64_encode( 'demo:915c1bba677c' )
+    ));
+	$contents = wp_remote_retrieve_body($contents);
+    $svg = str_replace(["\n", "\r", "\t"], ['', '', ''], $contents);
     $svg = explode('<svg', $svg);
     if (count($svg) === 2) {
         $svg = '<svg' . $svg[1];
@@ -188,3 +192,24 @@ function svg($name) {
 
 // custom logo support
 add_theme_support( 'custom-logo' );
+
+// get template parts
+function part($partName){
+	get_template_part( 'parts/part', $partName ); 
+}
+
+// image helper
+function imageHelper($imgId, $imgAlt){
+	$image_url  = wp_get_attachment_url( $imgId );
+	$file_ext   = pathinfo( $image_url, PATHINFO_EXTENSION );
+	if($file_ext == 'svg'){
+		echo file_get_contents($image_url);
+	}else{
+		echo "<img src='".wp_get_attachment_image_src( $imgId , 'full' )."' 
+		srcset='".wp_get_attachment_image_srcset($imgId)."' 
+		sizes='(min-width: 75rem) 60rem,
+		           (min-width: 50rem) 40rem,
+		           (min-width: 40rem) calc(100vw - 10rem),
+		           100vw' alt='".$imgAlt."'>";
+	}
+}

@@ -1,0 +1,13 @@
+.u-adaptive__mobile{
+	display: block !important;
+	@include s-responsive__mobile-up{
+		display: none !important;
+	}
+}
+
+.u-adaptive__desktop{
+	display: none !important;
+	@include s-responsive__mobile-up{
+		display: block !important;
+	}
+}
