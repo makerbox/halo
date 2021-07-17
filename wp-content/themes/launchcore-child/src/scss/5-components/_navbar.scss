@@ -4,8 +4,11 @@
 	width: 100vw;
 	position: fixed;
 	top: 0;
-	left: 0;
+	right: 0;
 	padding: $s-padding__mobile;
+	color: $s-color__white;
+	background: $s-color__trans;
+	max-width: 24rem;
 	.is-open &{
 		display: block;
 	}

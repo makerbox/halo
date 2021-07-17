@@ -10,6 +10,9 @@
 <header>
 	<nav class="c-navbar" data-navbar>
 		<div class="c-navbar__menu" data-menu>
+			<div class="c-navbar__menu--close">
+				<?php svg('icon-close'); ?>
+			</div>
 			<div class="c-navbar__menu--menu">
 				<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 			</div>

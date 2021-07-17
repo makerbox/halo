@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@400;600;700&display=swap);
 html {
-  color: #000; }
+  color: #000;
+  font-size: 16px; }
 
 img {
   image-rendering: -webkit-optimize-contrast; }
@@ -29,8 +30,11 @@ ul {
   width: 100vw;
   position: fixed;
   top: 0;
-  left: 0;
-  padding: 1.25rem; }
+  right: 0;
+  padding: 1.5rem;
+  color: #FFF;
+  background: rgba(62, 72, 87, 0.74);
+  max-width: 24rem; }
   .is-open .c-navbar__menu {
     display: block; }
 
@@ -47,5 +51,5 @@ ul {
           align-items: center; }
 
 .c-navbar__inner {
-  padding: 1.25rem; }
+  padding: 1.5rem; }
 
