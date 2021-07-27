@@ -119,39 +119,41 @@ registerBlockType( 'cgb/block-banner', {
 	        />
 				</div>
 				<div className="c-banner__foreground">
-					<div className="c-banner__headline">
-						<RichText
-								className="c-banner__headline--richtext"
-								onChange={ changeHeadline }
-								value={ attributes.headline }
-							/>
-					</div>
-					<div className="c-banner__bodytext">
-						<RichText
-								className="c-banner__bodytext--richtext"
-								onChange={ changeBodyText }
-								value={ attributes.bodyText }
-							/>
-					</div>
-					<div className="c-banner__button">
-						<div className="c-banner__button--icon">
-							<svg data-name="Group 36" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 36">
-							  <g data-name="Ellipse 2" fill="none" stroke="#fff">
-							    <ellipse cx="18.5" cy="18" rx="18.5" ry="18" stroke="none"/>
-							    <ellipse cx="18.5" cy="18" rx="18" ry="17.5"/>
-							  </g>
-							  <g fill="#fff" fill-rule="evenodd">
-							    <path data-name="Path 16" d="M18.349 25.141a.794.794 0 00.794-.794V10.056a.794.794 0 00-1.588 0v14.291a.794.794 0 00.794.794z"/>
-							    <path data-name="Path 17" d="M17.787 26.496a.794.794 0 001.124 0l4.764-4.764a.795.795 0 10-1.124-1.124l-4.2 4.2-4.2-4.2a.795.795 0 10-1.124 1.124l4.764 4.764z"/>
-							  </g>
-							</svg>
-						</div>
-						<div className="c-banner__button--text">
+					<div className="c-banner__foreground--inner">
+						<div className="c-banner__headline">
 							<RichText
-								className="c-banner__button--text__richtext"
-								onChange={ changeButtonText }
-								value={ attributes.buttonText }
-							/>
+									className="c-banner__headline--richtext"
+									onChange={ changeHeadline }
+									value={ attributes.headline }
+								/>
+						</div>
+						<div className="c-banner__bodytext">
+							<RichText
+									className="c-banner__bodytext--richtext"
+									onChange={ changeBodyText }
+									value={ attributes.bodyText }
+								/>
+						</div>
+						<div className="c-banner__button">
+							<div className="c-banner__button--icon">
+								<svg data-name="Group 36" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 36">
+								  <g data-name="Ellipse 2" fill="none" stroke="#fff">
+								    <ellipse cx="18.5" cy="18" rx="18.5" ry="18" stroke="none"/>
+								    <ellipse cx="18.5" cy="18" rx="18" ry="17.5"/>
+								  </g>
+								  <g fill="#fff" fill-rule="evenodd">
+								    <path data-name="Path 16" d="M18.349 25.141a.794.794 0 00.794-.794V10.056a.794.794 0 00-1.588 0v14.291a.794.794 0 00.794.794z"/>
+								    <path data-name="Path 17" d="M17.787 26.496a.794.794 0 001.124 0l4.764-4.764a.795.795 0 10-1.124-1.124l-4.2 4.2-4.2-4.2a.795.795 0 10-1.124 1.124l4.764 4.764z"/>
+								  </g>
+								</svg>
+							</div>
+							<div className="c-banner__button--text">
+								<RichText
+									className="c-banner__button--text__richtext"
+									onChange={ changeButtonText }
+									value={ attributes.buttonText }
+								/>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -181,36 +183,38 @@ registerBlockType( 'cgb/block-banner', {
 			    />
 				</div>
 				<div className="c-banner__foreground">
-					<div className="c-banner__headline">
-						<RichText.Content
-								className="c-banner__headline--richtext"
-								value={ attributes.headline }
-							/>
-					</div>
-					<div className="c-banner__bodytext">
-						<RichText.Content
-								className="c-banner__bodytext--richtext"
-								value={ attributes.bodyText }
-							/>
-					</div>
-					<div className="c-banner__button">
-						<div className="c-banner__button--icon">
-							<svg data-name="Group 36" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 36">
-							  <g data-name="Ellipse 2" fill="none" stroke="#fff">
-							    <ellipse cx="18.5" cy="18" rx="18.5" ry="18" stroke="none"/>
-							    <ellipse cx="18.5" cy="18" rx="18" ry="17.5"/>
-							  </g>
-							  <g fill="#fff" fill-rule="evenodd">
-							    <path data-name="Path 16" d="M18.349 25.141a.794.794 0 00.794-.794V10.056a.794.794 0 00-1.588 0v14.291a.794.794 0 00.794.794z"/>
-							    <path data-name="Path 17" d="M17.787 26.496a.794.794 0 001.124 0l4.764-4.764a.795.795 0 10-1.124-1.124l-4.2 4.2-4.2-4.2a.795.795 0 10-1.124 1.124l4.764 4.764z"/>
-							  </g>
-							</svg>
-						</div>
-						<div className="c-banner__button--text">
+					<div className="c-banner__foreground--inner">
+						<div className="c-banner__headline">
 							<RichText.Content
-								className="c-banner__button--text__richtext"
-								value={ attributes.buttonText }
-							/>
+									className="c-banner__headline--richtext"
+									value={ attributes.headline }
+								/>
+						</div>
+						<div className="c-banner__bodytext">
+							<RichText.Content
+									className="c-banner__bodytext--richtext"
+									value={ attributes.bodyText }
+								/>
+						</div>
+						<div className="c-banner__button">
+							<div className="c-banner__button--icon">
+								<svg data-name="Group 36" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 36">
+								  <g data-name="Ellipse 2" fill="none" stroke="#fff">
+								    <ellipse cx="18.5" cy="18" rx="18.5" ry="18" stroke="none"/>
+								    <ellipse cx="18.5" cy="18" rx="18" ry="17.5"/>
+								  </g>
+								  <g fill="#fff" fill-rule="evenodd">
+								    <path data-name="Path 16" d="M18.349 25.141a.794.794 0 00.794-.794V10.056a.794.794 0 00-1.588 0v14.291a.794.794 0 00.794.794z"/>
+								    <path data-name="Path 17" d="M17.787 26.496a.794.794 0 001.124 0l4.764-4.764a.795.795 0 10-1.124-1.124l-4.2 4.2-4.2-4.2a.795.795 0 10-1.124 1.124l4.764 4.764z"/>
+								  </g>
+								</svg>
+							</div>
+							<div className="c-banner__button--text">
+								<RichText.Content
+									className="c-banner__button--text__richtext"
+									value={ attributes.buttonText }
+								/>
+							</div>
 						</div>
 					</div>
 				</div>

@@ -165,16 +165,14 @@ ul {
 
 .c-banner__foreground {
   background: rgba(0, 0, 0, 0.45);
-  color: #FFF;
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   top: 0;
   left: 0;
   position: absolute;
-  z-index: 2;
+  z-index: 2; }
+
+.c-banner__foreground--inner {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -185,7 +183,22 @@ ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 1.5rem; }
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  color: #FFF; }
+  @media screen and (min-width: 768px) and (min-device-width: 768px) {
+    .c-banner__foreground--inner {
+      max-width: 67rem;
+      position: relative;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      padding-left: 17rem;
+      padding-right: 0; } }
 
 .c-banner__headline {
   text-transform: uppercase;
@@ -206,6 +219,12 @@ ul {
     width: 1rem;
     display: block;
     content: ''; }
+    @media screen and (min-width: 768px) and (min-device-width: 768px) {
+      .c-banner__bodytext:before {
+        width: 2.5rem; } }
+  @media screen and (min-width: 768px) and (min-device-width: 768px) {
+    .c-banner__bodytext {
+      padding-left: 3.5rem; } }
 
 .c-banner__button {
   display: -webkit-box;
@@ -216,7 +235,11 @@ ul {
           align-items: center;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: flex-start; }
+          justify-content: flex-start;
+  padding-left: 1.5rem; }
+  @media screen and (min-width: 768px) and (min-device-width: 768px) {
+    .c-banner__button {
+      padding-left: 3.5rem; } }
 
 .c-banner__button--icon {
   width: 2.5rem;
