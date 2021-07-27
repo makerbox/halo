@@ -205,7 +205,7 @@ function imageHelper($imgId, $imgAlt){
 	if($file_ext == 'svg'){
 		echo file_get_contents($image_url);
 	}else{
-		echo "<img src='".wp_get_attachment_image_src( $imgId , 'full' )."' 
+		echo "<img src='".wp_get_attachment_image_src( $imgId , 'full' )[0]."' 
 		srcset='".wp_get_attachment_image_srcset($imgId)."' 
 		sizes='(min-width: 75rem) 60rem,
 		           (min-width: 50rem) 40rem,

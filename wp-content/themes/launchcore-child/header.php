@@ -10,7 +10,7 @@
 <header>
 	<nav class="c-navbar" data-navbar>
 		<div class="c-navbar__menu" data-menu>
-			<div class="c-navbar__menu--close">
+			<div class="c-navbar__menu--close" data-menu-toggle>
 				<?php svg('icon-close'); ?>
 			</div>
 			<div class="c-navbar__menu--menu">
@@ -21,8 +21,9 @@
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>" rel="home" class="c-navbar__logo">
 				<?php 
 					$custom_logo_id = get_theme_mod( 'custom_logo' );
-					imageHelper($custom_logo_id, 'Halo Mining logo');
+					$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 				?>
+				<img src="<?php echo esc_url( $logo[0] ); ?>">
 			</a>
 			<div class="c-navbar__hamburger" data-menu-toggle>
 				menu

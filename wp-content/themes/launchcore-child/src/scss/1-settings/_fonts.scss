@@ -1,9 +1,11 @@
 //SCSS - settings > fonts
 
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Syne:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
 
 html{
 	color: $s-color__black;
 	font-size: 16px;
+	font-family: 'Rajdhani', sans-serif;
+	letter-spacing: 1.4px;
 }
