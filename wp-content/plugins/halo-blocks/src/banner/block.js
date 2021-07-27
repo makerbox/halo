@@ -196,7 +196,7 @@ registerBlockType( 'cgb/block-banner', {
 									value={ attributes.bodyText }
 								/>
 						</div>
-						<div className="c-banner__button">
+						<div className="c-banner__button" data-next-button>
 							<div className="c-banner__button--icon">
 								<svg data-name="Group 36" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 36">
 								  <g data-name="Ellipse 2" fill="none" stroke="#fff">

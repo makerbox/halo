@@ -2,6 +2,7 @@
 
 //components
 import "./components/navbar.js";
+import "./components/next-button.js";
 
 //templates
 
