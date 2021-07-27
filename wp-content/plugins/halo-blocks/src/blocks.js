@@ -10,3 +10,4 @@
  */
 
 import './banner/block.js';
+import './numbered-list/block.js';

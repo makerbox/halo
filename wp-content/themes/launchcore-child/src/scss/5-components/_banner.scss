@@ -22,6 +22,7 @@
 	}
 }
 
+
 .c-banner__foreground{
 	background: rgba(0,0,0,0.45);
 	width: 100%;
@@ -30,6 +31,10 @@
 	left: 0;
 	position: absolute;
 	z-index: 2;
+	padding-bottom: 4.5rem;
+	@include s-responsive__mobile-up{
+		padding-bottom: 5.5rem;
+	}
 }
 
 
@@ -105,4 +110,23 @@
 }
 .c-banner__button--text{
 	text-transform: uppercase;
+}
+
+
+//editor styles
+
+.c-banner__background--button{
+	background: none;
+	border: none;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.wp-block{
+	.c-banner__foreground{
+		height: 50%;
+		bottom: 0;
+		top: auto;
+	}
 }

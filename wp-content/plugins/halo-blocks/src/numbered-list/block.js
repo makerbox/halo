@@ -1,5 +1,5 @@
 /**
- * BLOCK: halo-blocks
+ * BLOCK: numbered-list
  *
  * Registering a basic block with Gutenberg.
  * Simple block, renders and saves the same content without any interactivity.
@@ -11,6 +11,11 @@ import './style.scss';
 
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
+
+const {RichText} = wp.blockEditor;
+// const { RichText, MediaUpload, InspectorControls } = wp.blockEditor;
+// const { Panel, PanelBody, PanelRow, SelectControl, CheckboxControl } = wp.components;
+// const { select } = wp.data; // get page data
 
 /**
  * Register: aa Gutenberg Block.
@@ -25,16 +30,45 @@ const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.b
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( 'cgb/block-halo-blocks', {
+registerBlockType( 'cgb/block-numbered-list', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'halo-blocks - CGB Block' ), // Block title.
+	title: __( 'numbered-list' ), // Block title.
 	icon: 'shield', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
 	category: 'common', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
-		__( 'halo-blocks — CGB Block' ),
-		__( 'CGB Example' ),
-		__( 'create-guten-block' ),
+		__( 'numbered-list' ),
 	],
+	attributes: {
+		headline: {
+			type: "string",
+			default: "headline.."
+		},
+		text1: {
+			type: "string",
+			default: "input text.."
+		},
+		text2: {
+			type: "string",
+			default: "input text.."
+		},
+		text3: {
+			type: "string",
+			default: "input text.."
+		},
+		text4: {
+			type: "string",
+			default: "input text.."
+		},
+		text5: {
+			type: "string",
+			default: "input text.."
+		},
+		text6: {
+			type: "string",
+			default: "input text.."
+		},
+	},
+
 
 	/**
 	 * The edit function describes the structure of your block in the context of the editor.
@@ -47,22 +81,129 @@ registerBlockType( 'cgb/block-halo-blocks', {
 	 * @param {Object} props Props.
 	 * @returns {Mixed} JSX Component.
 	 */
-	edit: ( props ) => {
-		// Creates a <p class='wp-block-cgb-block-halo-blocks'></p>.
+	edit: ( { attributes, setAttributes } ) => {
+		
+		
+		const changeHeadline = (newHeadline) => {
+			setAttributes({
+		        headline: newHeadline
+		    })
+		};
+		const text1 = (newText) => {
+			setAttributes({
+		        text1: newText
+		    })
+		};
+		const text2 = (newText) => {
+			setAttributes({
+		        text2: newText
+		    })
+		};
+		const text3 = (newText) => {
+			setAttributes({
+		        text3: newText
+		    })
+		};
+		const text4 = (newText) => {
+			setAttributes({
+		        text4: newText
+		    })
+		};
+		const text5 = (newText) => {
+			setAttributes({
+		        text5: newText
+		    })
+		};
+		const text6 = (newText) => {
+			setAttributes({
+		        text6: newText
+		    })
+		};
 		return (
-			<div className={ props.className }>
-				<p>— Hello from the backend.</p>
-				<p>
-					CGB BLOCK: <code>halo-blocks</code> is a new Gutenberg block
-				</p>
-				<p>
-					It was created via{ ' ' }
-					<code>
-						<a href="https://github.com/ahmadawais/create-guten-block">
-							create-guten-block
-						</a>
-					</code>.
-				</p>
+			<div className="c-numbered-list">
+				<div className="c-numbered-list__inner">
+					<div className="c-numbered-list__headline">
+						<RichText
+							className="c-numbered-list__headline--richtext"
+							onChange={ changeHeadline }
+							value={ attributes.headline }
+						/>
+					</div>
+					<div className="c-numbered-list__list">
+						<div className="c-numbered-list__item">
+							<div className="c-numbered-list__number">
+								1
+							</div>
+							<div className="c-numbered-list__text">
+								<RichText
+									className="c-numbered-list__item--richtext"
+									onChange={ text1 }
+									value={ attributes.text1 }
+								/>
+							</div>
+						</div>
+						<div className="c-numbered-list__item">
+							<div className="c-numbered-list__number">
+								2
+							</div>
+							<div className="c-numbered-list__text">
+								<RichText
+									className="c-numbered-list__item--richtext"
+									onChange={ text2 }
+									value={ attributes.text2 }
+								/>
+							</div>
+						</div>
+						<div className="c-numbered-list__item">
+							<div className="c-numbered-list__number">
+								3
+							</div>
+							<div className="c-numbered-list__text">
+								<RichText
+									className="c-numbered-list__item--richtext"
+									onChange={ text3 }
+									value={ attributes.text3 }
+								/>
+							</div>
+						</div>
+						<div className="c-numbered-list__item">
+							<div className="c-numbered-list__number">
+								4
+							</div>
+							<div className="c-numbered-list__text">
+								<RichText
+									className="c-numbered-list__item--richtext"
+									onChange={ text4 }
+									value={ attributes.text4 }
+								/>
+							</div>
+						</div>
+						<div className="c-numbered-list__item">
+							<div className="c-numbered-list__number">
+								5
+							</div>
+							<div className="c-numbered-list__text">
+								<RichText
+									className="c-numbered-list__item--richtext"
+									onChange={ text5 }
+									value={ attributes.text5 }
+								/>
+							</div>
+						</div>
+						<div className="c-numbered-list__item">
+							<div className="c-numbered-list__number">
+								6
+							</div>
+							<div className="c-numbered-list__text">
+								<RichText
+									className="c-numbered-list__item--richtext"
+									onChange={ text6 }
+									value={ attributes.text6 }
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		);
 	},
@@ -78,21 +219,85 @@ registerBlockType( 'cgb/block-halo-blocks', {
 	 * @param {Object} props Props.
 	 * @returns {Mixed} JSX Frontend HTML.
 	 */
-	save: ( props ) => {
+	save: ( { attributes } ) => {
 		return (
-			<div className={ props.className }>
-				<p>— Hello from the frontend.</p>
-				<p>
-					CGB BLOCK: <code>halo-blocks</code> is a new Gutenberg block.
-				</p>
-				<p>
-					It was created via{ ' ' }
-					<code>
-						<a href="https://github.com/ahmadawais/create-guten-block">
-							create-guten-block
-						</a>
-					</code>.
-				</p>
+			<div className="c-numbered-list">
+				<div className="c-numbered-list__inner">
+					<div className="c-numbered-list__headline">
+						<RichText.Content
+							className="c-numbered-list__headline--richtext"							
+							value={ attributes.headline }
+						/>
+					</div>
+					<div className="c-numbered-list__list">
+						<div className="c-numbered-list__item">
+							<div className="c-numbered-list__number">
+								1
+							</div>
+							<div className="c-numbered-list__text">
+								<RichText.Content
+									className="c-numbered-list__item--richtext"
+									value={ attributes.text1 }
+								/>
+							</div>
+						</div>
+						<div className="c-numbered-list__item">
+							<div className="c-numbered-list__number">
+								2
+							</div>
+							<div className="c-numbered-list__text">
+								<RichText.Content
+									className="c-numbered-list__item--richtext"
+									value={ attributes.text2 }
+								/>
+							</div>
+						</div>
+						<div className="c-numbered-list__item">
+							<div className="c-numbered-list__number">
+								3
+							</div>
+							<div className="c-numbered-list__text">
+								<RichText.Content
+									className="c-numbered-list__item--richtext"
+									value={ attributes.text3 }
+								/>
+							</div>
+						</div>
+						<div className="c-numbered-list__item">
+							<div className="c-numbered-list__number">
+								4
+							</div>
+							<div className="c-numbered-list__text">
+								<RichText.Content
+									className="c-numbered-list__item--richtext"
+									value={ attributes.text4 }
+								/>
+							</div>
+						</div>
+						<div className="c-numbered-list__item">
+							<div className="c-numbered-list__number">
+								5
+							</div>
+							<div className="c-numbered-list__text">
+								<RichText.Content
+									className="c-numbered-list__item--richtext"
+									value={ attributes.text5 }
+								/>
+							</div>
+						</div>
+						<div className="c-numbered-list__item">
+							<div className="c-numbered-list__number">
+								6
+							</div>
+							<div className="c-numbered-list__text">
+								<RichText.Content
+									className="c-numbered-list__item--richtext"
+									value={ attributes.text6 }
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		);
 	},
