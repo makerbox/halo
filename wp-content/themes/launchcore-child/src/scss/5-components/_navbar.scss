@@ -2,6 +2,7 @@
 	position: absolute;
 	z-index: 9;
 	width: 100vw;
+	overflow: hidden;
 }
 
 .c-navbar__menu{
@@ -20,7 +21,7 @@
 		justify-content: center;
 	}
 	@include s-responsive__mobile-up{
-		max-width: 24rem;
+		max-width: 32%;
 		border-left: 1px solid #FFF;
 	}
 }
@@ -30,6 +31,10 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	max-width: 79rem;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .c-navbar__inner{
@@ -54,6 +59,20 @@
 	.is-open &{
 		display: none;
 	}
+	@include s-responsive__mobile-up{
+		position: relative;
+		&:after{
+			position: absolute;
+			width: 20vw;
+			height: 1px;
+			display: block;
+			left: calc(100% + 1rem);
+			top: 50%;
+			transform: translateY(-50%);
+			content: '';
+			background: #FFF;
+		}
+	}
 }
 
 .c-navbar__menu--close{
@@ -61,6 +80,10 @@
 	right: 0;
 	top: 0;
 	padding: 4rem 1.5rem;
+	@include s-responsive__desktop-up{
+		right: auto;
+		left: 24rem;
+	}
 }
 
 .c-navbar__menu--menu{

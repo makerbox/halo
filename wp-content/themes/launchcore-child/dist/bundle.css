@@ -29,7 +29,8 @@ ul {
 .c-navbar {
   position: absolute;
   z-index: 9;
-  width: 100vw; }
+  width: 100vw;
+  overflow: hidden; }
 
 .c-navbar__menu {
   display: none;
@@ -54,7 +55,7 @@ ul {
             justify-content: center; }
   @media screen and (min-width: 768px) and (min-device-width: 768px) {
     .c-navbar__menu {
-      max-width: 24rem;
+      max-width: 32%;
       border-left: 1px solid #FFF; } }
 
 .c-navbar__inner {
@@ -67,7 +68,12 @@ ul {
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  max-width: 79rem;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
 
 .c-navbar__inner {
   padding: 1.5rem; }
@@ -88,12 +94,30 @@ ul {
   font-size: 1rem; }
   .is-open .c-navbar__hamburger {
     display: none; }
+  @media screen and (min-width: 768px) and (min-device-width: 768px) {
+    .c-navbar__hamburger {
+      position: relative; }
+      .c-navbar__hamburger:after {
+        position: absolute;
+        width: 20vw;
+        height: 1px;
+        display: block;
+        left: calc(100% + 1rem);
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        content: '';
+        background: #FFF; } }
 
 .c-navbar__menu--close {
   position: absolute;
   right: 0;
   top: 0;
   padding: 4rem 1.5rem; }
+  @media screen and (min-width: 1440px) and (min-device-width: 1440px) {
+    .c-navbar__menu--close {
+      right: auto;
+      left: 24rem; } }
 
 .c-navbar__menu--menu a {
   text-decoration: none;
