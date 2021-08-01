@@ -1,5 +1,5 @@
 /**
- * BLOCK: halo-blocks
+ * BLOCK: overlay
  *
  * Registering a basic block with Gutenberg.
  * Simple block, renders and saves the same content without any interactivity.
@@ -11,6 +11,13 @@ import './style.scss';
 
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
+
+const {RichText, MediaUpload} = wp.blockEditor;
+
+
+// const { RichText, MediaUpload, InspectorControls } = wp.blockEditor;
+// const { Panel, PanelBody, PanelRow, SelectControl, CheckboxControl } = wp.components;
+// const { select } = wp.data; // get page data
 
 /**
  * Register: aa Gutenberg Block.
@@ -25,17 +32,30 @@ const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.b
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( 'cgb/block-halo-blocks', {
+registerBlockType( 'cgb/block-overlay', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'halo-blocks - CGB Block' ), // Block title.
+	title: __( 'overlay' ), // Block title.
 	icon: 'shield', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
 	category: 'common', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
-		__( 'halo-blocks — CGB Block' ),
-		__( 'CGB Example' ),
-		__( 'create-guten-block' ),
+		__( 'overlay' ),
 	],
-
+	attributes: {
+		headline: {
+			type: 'string',
+			default: 'headline'
+		},
+		text: {
+			type: 'string',
+			default: 'text'
+		},
+		imgUrl: {
+			type: 'string'
+		},
+		imgId: {
+			type: 'string'
+		}
+	},
 	/**
 	 * The edit function describes the structure of your block in the context of the editor.
 	 * This represents what the editor will render when the block is used.
@@ -47,22 +67,25 @@ registerBlockType( 'cgb/block-halo-blocks', {
 	 * @param {Object} props Props.
 	 * @returns {Mixed} JSX Component.
 	 */
-	edit: ( props ) => {
+	edit: ( {attributes, setAttributes} ) => {
+		const changeHeadline = (newHeadline) => {
+			setAttributes({
+				headline: newHeadline
+			});
+		};
 		// Creates a <p class='wp-block-cgb-block-halo-blocks'></p>.
 		return (
-			<div className={ props.className }>
-				<p>— Hello from the backend.</p>
-				<p>
-					CGB BLOCK: <code>halo-blocks</code> is a new Gutenberg block
-				</p>
-				<p>
-					It was created via{ ' ' }
-					<code>
-						<a href="https://github.com/ahmadawais/create-guten-block">
-							create-guten-block
-						</a>
-					</code>.
-				</p>
+			<div className="c-overlay">
+				<div className="c-overlay__inner">
+					<div className="c-overlay__image">
+					</div>
+					<div className="c-overlay__text">
+						<div className="c-overlay__headline">
+						</div>
+						<div className="c-overlay__text--text">
+						</div>
+					</div>
+				</div>
 			</div>
 		);
 	},
@@ -78,21 +101,10 @@ registerBlockType( 'cgb/block-halo-blocks', {
 	 * @param {Object} props Props.
 	 * @returns {Mixed} JSX Frontend HTML.
 	 */
-	save: ( props ) => {
+	save: ( {attributes} ) => {
 		return (
-			<div className={ props.className }>
-				<p>— Hello from the frontend.</p>
-				<p>
-					CGB BLOCK: <code>halo-blocks</code> is a new Gutenberg block.
-				</p>
-				<p>
-					It was created via{ ' ' }
-					<code>
-						<a href="https://github.com/ahmadawais/create-guten-block">
-							create-guten-block
-						</a>
-					</code>.
-				</p>
+			<div className="c-overlay">
+				
 			</div>
 		);
 	},
