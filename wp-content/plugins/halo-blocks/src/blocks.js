@@ -11,3 +11,5 @@
 
 import './banner/block.js';
 import './numbered-list/block.js';
+import './stats/block.js';
+import './stat/block.js';

@@ -1,0 +1,21 @@
+.c-stats{
+	padding: 3.5rem $s-padding__mobile;
+	padding-bottom: 0;
+	@include s-responsive__mobile-up{
+		max-width: 1080px;
+		left: 50%;
+		position: relative;
+		transform: translateX(-50%);
+	}
+}
+
+.c-stats__headline{
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	margin-bottom: 1.5rem;
+}
+
+.c-stats__stats{
+	display: flex;
+	flex-wrap: wrap;
+}
