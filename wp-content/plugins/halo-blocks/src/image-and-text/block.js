@@ -73,16 +73,56 @@ registerBlockType( 'cgb/block-image-and-text', {
 				headline: newHeadline
 			});
 		};
+		const changeImage = (newImg) => {
+			setAttributes({
+				imgUrl: newImg.sizes.full.url,
+				imgId: newImg.id
+			})
+		};
+		const changeText = (newText) => {
+			setAttributes({
+				text: newText
+			});
+		};
 		// Creates a <p class='wp-block-cgb-block-halo-blocks'></p>.
 		return (
 			<div className="c-image-and-text">
 				<div className="c-image-and-text__inner">
 					<div className="c-image-and-text__image">
+						<MediaUpload 
+				            onSelect={changeImage}
+				            render={
+				            	({open}) => {
+				              		if(typeof attributes.imgUrl == 'undefined'){
+					              		return <button className="c-image-and-text__image--button" onClick={ open }>
+					              				Choose background image..
+					              			</button>;
+					              	}else{
+					                	return <button className="c-image-and-text__image--button" onClick={open}>
+										        	<img
+										        		classNames={ `wp-image-${attributes.imgId}` }
+										        		src={attributes.imgUrl}
+										        	/>
+								     				</button>;
+					                }
+				            	}	
+					        }
+				        />
 					</div>
 					<div className="c-image-and-text__text">
 						<div className="c-image-and-text__headline">
+							<RichText
+								className="c-image-and-text__headline--richtext"
+								onChange={changeHeadline}
+								value={attributes.headline}
+							/>
 						</div>
 						<div className="c-image-and-text__text--text">
+							<RichText
+								className="c-image-and-text__text--text__richtext"
+								onChange={changeText}
+								value={attributes.text}
+							/>
 						</div>
 					</div>
 				</div>
@@ -104,7 +144,28 @@ registerBlockType( 'cgb/block-image-and-text', {
 	save: ( {attributes} ) => {
 		return (
 			<div className="c-image-and-text">
-				
+				<div className="c-image-and-text__inner">
+					<div className="c-image-and-text__image">
+						<img
+							src={attributes.imgUrl}
+				        	className={`wp-image-` + attributes.imgId}
+				        />
+					</div>
+					<div className="c-image-and-text__text">
+						<div className="c-image-and-text__headline">
+							<RichText.Content
+								className="c-image-and-text__headline--richtext"
+								value={attributes.headline}
+							/>
+						</div>
+						<div className="c-image-and-text__text--text">
+							<RichText.Content
+								className="c-image-and-text__text--text__richtext"
+								value={attributes.text}
+							/>
+						</div>
+					</div>
+				</div>
 			</div>
 		);
 	},
