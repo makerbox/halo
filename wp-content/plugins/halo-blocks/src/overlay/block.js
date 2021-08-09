@@ -54,6 +54,12 @@ registerBlockType( 'cgb/block-overlay', {
 		},
 		imgId: {
 			type: 'string'
+		},
+		backgroundImgUrl: {
+			type: 'string'
+		},
+		backgroundImgId: {
+			type: 'string'
 		}
 	},
 	/**
@@ -73,16 +79,85 @@ registerBlockType( 'cgb/block-overlay', {
 				headline: newHeadline
 			});
 		};
+		const changeImage = (newImg) => {
+			setAttributes({
+				imgUrl: newImg.sizes.full.url,
+				imgId: newImg.id.toString()
+			})
+		};
+		const changeBackgroundImage = (newImg) => {
+			setAttributes({
+				backgroundImgUrl: newImg.sizes.full.url,
+				backgroundImgId: newImg.id.toString()
+			})
+		};
+		const changeText = (newText) => {
+			setAttributes({
+				text: newText
+			});
+		};
 		// Creates a <p class='wp-block-cgb-block-halo-blocks'></p>.
 		return (
 			<div className="c-overlay">
+				<div className="c-overlay__background">
+					<MediaUpload 
+			            onSelect={changeBackgroundImage}
+			            render={
+			            	({open}) => {
+			              		if(typeof attributes.backgroundImgUrl == 'undefined'){
+				              		return <button className="c-overlay__background--image__button" onClick={ open }>
+				              				Choose background image..
+				              			</button>;
+				              	}else{
+				                	return <button className="c-overlay__background--image__button" onClick={open}>
+									        	<img
+									        		classNames={ `wp-image-${attributes.backgroundImgId}` }
+									        		src={attributes.backgroundImgUrl}
+									        	/>
+							     				</button>;
+				                }
+			            	}	
+				        }
+				        />
+				</div>
 				<div className="c-overlay__inner">
-					<div className="c-overlay__image">
-					</div>
-					<div className="c-overlay__text">
-						<div className="c-overlay__headline">
+					<div className="c-overlay__foreground">
+						<div className="c-overlay__text">
+							<div className="c-overlay__headline">
+								<RichText
+									className="c-overlay__headline--richtext"
+									onChange={changeHeadline}
+									value={attributes.headline}
+								/>
+							</div>
+							<div className="c-overlay__text--text">
+								<RichText
+									className="c-overlay__text--text__richtext"
+									onChange={changeText}
+									value={attributes.text}
+								/>
+							</div>
 						</div>
-						<div className="c-overlay__text--text">
+						<div className="c-overlay__image">
+							<MediaUpload 
+					            onSelect={changeImage}
+					            render={
+					            	({open}) => {
+					              		if(typeof attributes.imgUrl == 'undefined'){
+						              		return <button className="c-overlay__image--button" onClick={ open }>
+						              				Choose image..
+						              			</button>;
+						              	}else{
+						                	return <button className="c-overlay__image--button" onClick={open}>
+											        	<img
+											        		classNames={ `wp-image-${attributes.imgId}` }
+											        		src={attributes.imgUrl}
+											        	/>
+									     				</button>;
+						                }
+					            	}	
+						        }
+					        />
 						</div>
 					</div>
 				</div>
@@ -103,8 +178,37 @@ registerBlockType( 'cgb/block-overlay', {
 	 */
 	save: ( {attributes} ) => {
 		return (
-			<div className="c-overlay">
-				
+			<div className="c-overlay" id="hydroelectric-operations">
+				<div className="c-overlay__background">
+					<img
+						src={attributes.backgroundImgUrl}
+			        	className={`wp-image-` + attributes.backgroundImgId}
+			        />
+				</div>
+				<div className="c-overlay__inner">
+					<div className="c-overlay__foreground">
+						<div className="c-overlay__text">
+							<div className="c-overlay__headline">
+								<RichText.Content
+									className="c-overlay__headline--richtext"
+									value={attributes.headline}
+								/>
+							</div>
+							<div className="c-overlay__text--text">
+								<RichText.Content
+									className="c-overlay__text--text__richtext"
+									value={attributes.text}
+								/>
+							</div>
+						</div>
+						<div className="c-overlay__image">
+							<img
+								src={attributes.imgUrl}
+					        	className={`wp-image-` + attributes.imgId}
+					        />
+						</div>
+					</div>
+				</div>
 			</div>
 		);
 	},

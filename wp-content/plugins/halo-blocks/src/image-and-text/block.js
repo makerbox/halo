@@ -143,7 +143,7 @@ registerBlockType( 'cgb/block-image-and-text', {
 	 */
 	save: ( {attributes} ) => {
 		return (
-			<div className="c-image-and-text">
+			<div className="c-image-and-text" id="about-us">
 				<div className="c-image-and-text__inner">
 					<div className="c-image-and-text__image">
 						<img

@@ -627,3 +627,97 @@ body {
     .c-image-under-text__text--text {
       padding-left: 3.5rem; } }
 
+.c-overlay {
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+
+.c-overlay__inner {
+  padding: 0 1.5rem;
+  position: relative;
+  background: rgba(62, 72, 87, 0.74); }
+
+.c-overlay__background {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0; }
+  .c-overlay__background img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+.c-overlay__foreground {
+  padding: 8rem 1.5rem; }
+  @media screen and (min-width: 768px) and (min-device-width: 768px) {
+    .c-overlay__foreground {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      max-width: 1080px;
+      left: 50%;
+      position: relative;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); } }
+
+.c-overlay__image {
+  width: 100%; }
+  .c-overlay__image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    -o-object-fit: contain;
+       object-fit: contain; }
+
+.c-overlay__text {
+  background: transparent;
+  color: #FFF;
+  position: relative;
+  z-index: 2;
+  padding-bottom: 2.5rem; }
+  .c-overlay__text strong {
+    color: #DB2526;
+    font-weight: normal; }
+  .c-overlay__text br {
+    height: 1rem;
+    display: block;
+    width: 100%;
+    content: ''; }
+  @media screen and (min-width: 768px) and (min-device-width: 768px) {
+    .c-overlay__text {
+      margin: 0;
+      padding-bottom: 4rem;
+      padding: 4.5rem; } }
+
+.c-overlay__headline {
+  text-transform: uppercase;
+  margin-bottom: 1rem; }
+
+.c-overlay__text--text {
+  letter-spacing: 0px;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative; }
+  .c-overlay__text--text:before {
+    position: absolute;
+    top: .5rem;
+    left: 0;
+    background: #FFF;
+    height: 1px;
+    width: 1rem;
+    display: block;
+    content: ''; }
+    @media screen and (min-width: 768px) and (min-device-width: 768px) {
+      .c-overlay__text--text:before {
+        width: 2.5rem; } }
+  @media screen and (min-width: 768px) and (min-device-width: 768px) {
+    .c-overlay__text--text {
+      padding-left: 3.5rem; } }
+

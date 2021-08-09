@@ -15,3 +15,4 @@ import './stats/block.js';
 import './stat/block.js';
 import './image-and-text/block.js';
 import './image-under-text/block.js';
+import './overlay/block.js';

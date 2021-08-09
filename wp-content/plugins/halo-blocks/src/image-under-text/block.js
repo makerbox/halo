@@ -143,7 +143,7 @@ registerBlockType( 'cgb/block-image-under-text', {
 	 */
 	save: ( {attributes} ) => {
 		return (
-			<div className="c-image-under-text">
+			<div className="c-image-under-text" id="how-bitcoin-mining-works">
 				<div className="c-image-under-text__inner">
 					<div className="c-image-under-text__image">
 						<img

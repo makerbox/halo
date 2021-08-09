@@ -174,7 +174,7 @@ registerBlockType( 'cgb/block-banner', {
 	 */
 	save: ( { attributes } ) => {
 		return (
-			<div className="c-banner">
+			<div className="c-banner" id="home">
 				
 				<div className="c-banner__background">
 					<img
