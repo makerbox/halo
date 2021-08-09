@@ -11,4 +11,9 @@ $(document).ready(function(){
 			navbar.addClass('is-open');
 		}
 	})
+
+	$(document).on('click touchend', '.menu-item', function(e){
+		let navbar = $(document).find('[data-navbar]');
+		navbar.removeClass('is-open');
+	})
 })
