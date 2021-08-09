@@ -76,7 +76,7 @@ registerBlockType( 'cgb/block-banner', {
 		const changeImage = (newImg) => {
 			setAttributes({
 		        imgUrl: newImg.sizes.full.url,
-		        imgId: newImg.id
+		        imgId: newImg.id.toString()
 		    })
 		};
 		const changeHeadline = (newHeadline) => {

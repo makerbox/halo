@@ -14,6 +14,7 @@
 // 3-elements	-----------HTML elements e.g. body
 @import './3-elements/paragraphs';
 @import './3-elements/lists';
+@import './3-elements/body';
 
 // 4-objects	-----------small pieces that make up components e.g. menu item
 
@@ -23,6 +24,8 @@
 @import './5-components/numbered-list';
 @import './5-components/stats';
 @import './5-components/stat';
+@import './5-components/image-and-text';
+
 
 // 6-parts	-----------template parts e.g. header
 
@@ -31,4 +34,4 @@
 // 8-vendor	-----------third party styles
 
 // 9-overlords	-----------overrides all other styles
-@import './9-overlords/wp-block';
+@import './9-overlords/thg';

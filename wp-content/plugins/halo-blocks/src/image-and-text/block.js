@@ -76,7 +76,7 @@ registerBlockType( 'cgb/block-image-and-text', {
 		const changeImage = (newImg) => {
 			setAttributes({
 				imgUrl: newImg.sizes.full.url,
-				imgId: newImg.id
+				imgId: newImg.id.toString()
 			})
 		};
 		const changeText = (newText) => {

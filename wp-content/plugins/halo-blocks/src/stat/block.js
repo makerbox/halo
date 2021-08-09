@@ -71,7 +71,7 @@ registerBlockType( 'cgb/block-stat', {
 		const changeGlyph = (newImg) => {
 			setAttributes({
 				imgUrl: newImg.sizes.full.url,
-				imgId: newImg.id
+				imgId: newImg.id.toString()
 			})
 		};
 		const changeStat = (newText) => {
