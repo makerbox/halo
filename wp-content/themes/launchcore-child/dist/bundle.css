@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap);
-html {
+html, body {
   color: #000;
   font-size: 16px;
   font-family: 'Rajdhani', sans-serif;
@@ -664,7 +664,8 @@ body {
       left: 50%;
       position: relative;
       -webkit-transform: translateX(-50%);
-              transform: translateX(-50%); } }
+              transform: translateX(-50%);
+      padding: 8rem 0; } }
 
 .c-overlay__image {
   width: 100%; }
@@ -692,8 +693,9 @@ body {
   @media screen and (min-width: 768px) and (min-device-width: 768px) {
     .c-overlay__text {
       margin: 0;
-      padding-bottom: 4rem;
-      padding: 4.5rem; } }
+      padding: 4.5rem;
+      padding-left: 0;
+      padding-bottom: 4rem; } }
 
 .c-overlay__headline {
   text-transform: uppercase;
@@ -719,5 +721,102 @@ body {
         width: 2.5rem; } }
   @media screen and (min-width: 768px) and (min-device-width: 768px) {
     .c-overlay__text--text {
+      padding-left: 3.5rem; } }
+
+.c-overhang {
+  width: 100%;
+  position: relative; }
+
+.c-overhang__inner {
+  padding: 0 1.5rem;
+  position: relative;
+  padding-bottom: 0; }
+
+.c-overhang__background {
+  width: 100%;
+  position: absolute;
+  height: calc(100% - 5rem);
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.05); }
+  @media screen and (min-width: 768px) and (min-device-width: 768px) {
+    .c-overhang__background {
+      height: 100%; } }
+
+.c-overhang__foreground {
+  padding: 4.5rem 1.5rem;
+  padding-bottom: 0; }
+  @media screen and (min-width: 768px) and (min-device-width: 768px) {
+    .c-overhang__foreground {
+      max-width: 1080px;
+      left: 50%;
+      position: relative;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      padding: 0; } }
+
+.c-overhang__image {
+  width: 100%; }
+  .c-overhang__image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    -o-object-fit: contain;
+       object-fit: contain; }
+  @media screen and (min-width: 768px) and (min-device-width: 768px) {
+    .c-overhang__image img {
+      position: absolute;
+      top: 6rem;
+      right: 0;
+      -o-object-position: right;
+         object-position: right;
+      max-width: 50%; } }
+
+.c-overhang__text {
+  background: transparent;
+  color: #000;
+  position: relative;
+  z-index: 2;
+  padding-bottom: 2.5rem; }
+  .c-overhang__text strong {
+    color: #DB2526;
+    font-weight: normal; }
+  .c-overhang__text br {
+    height: 1rem;
+    display: block;
+    width: 100%;
+    content: ''; }
+  @media screen and (min-width: 768px) and (min-device-width: 768px) {
+    .c-overhang__text {
+      margin: 0;
+      padding: 4.5rem;
+      padding-left: 0;
+      padding-bottom: 4rem;
+      width: 60%; } }
+
+.c-overhang__headline {
+  text-transform: uppercase;
+  margin-bottom: 1rem; }
+
+.c-overhang__text--text {
+  letter-spacing: 0px;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative; }
+  .c-overhang__text--text:before {
+    position: absolute;
+    top: .5rem;
+    left: 0;
+    background: #DB2526;
+    height: 1px;
+    width: 1rem;
+    display: block;
+    content: ''; }
+    @media screen and (min-width: 768px) and (min-device-width: 768px) {
+      .c-overhang__text--text:before {
+        width: 2.5rem; } }
+  @media screen and (min-width: 768px) and (min-device-width: 768px) {
+    .c-overhang__text--text {
       padding-left: 3.5rem; } }
 

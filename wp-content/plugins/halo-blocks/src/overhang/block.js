@@ -54,6 +54,12 @@ registerBlockType( 'cgb/block-overhang', {
 		},
 		imgId: {
 			type: 'string'
+		},
+		backgroundImgUrl: {
+			type: 'string'
+		},
+		backgroundImgId: {
+			type: 'string'
 		}
 	},
 	/**
@@ -73,16 +79,66 @@ registerBlockType( 'cgb/block-overhang', {
 				headline: newHeadline
 			});
 		};
+		const changeImage = (newImg) => {
+			setAttributes({
+				imgUrl: newImg.sizes.full.url,
+				imgId: newImg.id.toString()
+			})
+		};
+		const changeBackgroundImage = (newImg) => {
+			setAttributes({
+				backgroundImgUrl: newImg.sizes.full.url,
+				backgroundImgId: newImg.id.toString()
+			})
+		};
+		const changeText = (newText) => {
+			setAttributes({
+				text: newText
+			});
+		};
 		// Creates a <p class='wp-block-cgb-block-halo-blocks'></p>.
 		return (
 			<div className="c-overhang">
+				<div className="c-overhang__background">					
+				</div>
 				<div className="c-overhang__inner">
-					<div className="c-overhang__image">
-					</div>
-					<div className="c-overhang__text">
-						<div className="c-overhang__headline">
+					<div className="c-overhang__foreground">
+						<div className="c-overhang__text">
+							<div className="c-overhang__headline">
+								<RichText
+									className="c-overhang__headline--richtext"
+									onChange={changeHeadline}
+									value={attributes.headline}
+								/>
+							</div>
+							<div className="c-overhang__text--text">
+								<RichText
+									className="c-overhang__text--text__richtext"
+									onChange={changeText}
+									value={attributes.text}
+								/>
+							</div>
 						</div>
-						<div className="c-overhang__text--text">
+						<div className="c-overhang__image">
+							<MediaUpload 
+					            onSelect={changeImage}
+					            render={
+					            	({open}) => {
+					              		if(typeof attributes.imgUrl == 'undefined'){
+						              		return <button className="c-overhang__image--button" onClick={ open }>
+						              				Choose image..
+						              			</button>;
+						              	}else{
+						                	return <button className="c-overhang__image--button" onClick={open}>
+											        	<img
+											        		classNames={ `wp-image-${attributes.imgId}` }
+											        		src={attributes.imgUrl}
+											        	/>
+									     				</button>;
+						                }
+					            	}	
+						        }
+					        />
 						</div>
 					</div>
 				</div>
@@ -103,8 +159,33 @@ registerBlockType( 'cgb/block-overhang', {
 	 */
 	save: ( {attributes} ) => {
 		return (
-			<div className="c-overhang">
-				
+			<div className="c-overhang" id="hydroelectric-operations">
+				<div className="c-overhang__background">
+				</div>
+				<div className="c-overhang__inner">
+					<div className="c-overhang__foreground">
+						<div className="c-overhang__text">
+							<div className="c-overhang__headline">
+								<RichText.Content
+									className="c-overhang__headline--richtext"
+									value={attributes.headline}
+								/>
+							</div>
+							<div className="c-overhang__text--text">
+								<RichText.Content
+									className="c-overhang__text--text__richtext"
+									value={attributes.text}
+								/>
+							</div>
+						</div>
+						<div className="c-overhang__image">
+							<img
+								src={attributes.imgUrl}
+					        	className={`wp-image-` + attributes.imgId}
+					        />
+						</div>
+					</div>
+				</div>
 			</div>
 		);
 	},

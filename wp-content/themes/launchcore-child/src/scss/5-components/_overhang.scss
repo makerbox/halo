@@ -1,45 +1,41 @@
-.c-overlay{
+.c-overhang{
 	width: 100%;
 	position: relative;
-	overflow: hidden;
 }
 
 
 
-.c-overlay__inner{
+.c-overhang__inner{
 	padding: 0 $s-padding__mobile;
 	position: relative;
-	background: rgba(62,72,87,.74);
+	padding-bottom: 0;
 }
 
-.c-overlay__background{
+.c-overhang__background{
 	width: 100%;
 	position: absolute;
-	height: 100%;
+	height: calc(100% - 5rem);
 	top: 0;
 	left: 0;
-	img{
-		width: 100%;
+	background: rgba(0,0,0,0.05);
+	@include s-responsive__mobile-up{
 		height: 100%;
-		display: block;
-		object-fit: cover;
 	}
 }
 
-.c-overlay__foreground{
-	padding: 8rem $s-padding__mobile;
+.c-overhang__foreground{
+	padding: 4.5rem $s-padding__mobile;
+	padding-bottom: 0;
 	@include s-responsive__mobile-up{
-		display: flex;
-		align-items: center;
 		max-width: 1080px;
 		left: 50%;
 		position: relative;
 		transform: translateX(-50%);
-		padding: 8rem 0;
+		padding: 0;
 	}
 }
 
-.c-overlay__image{
+.c-overhang__image{
 	width: 100%;
 	img{
 		width: 100%;
@@ -47,11 +43,20 @@
 		display: block;
 		object-fit: contain;
 	}
+	@include s-responsive__mobile-up{
+		img{
+			position: absolute;
+		    top: 6rem;
+		    right: 0;
+		    object-position: right;
+		    max-width: 50%;
+		}
+	}
 }
 
-.c-overlay__text{
+.c-overhang__text{
 	background: transparent;
-	color: #FFF;
+	color: #000;
 	position: relative;
 	z-index: 2;
 	padding-bottom: 2.5rem;
@@ -69,16 +74,17 @@
 		margin: 0;
 		padding: 4.5rem;
 		padding-left: 0;
-		padding-bottom: 4rem;	
+		padding-bottom: 4rem;
+		width: 60%;
 	}
 }
 
-.c-overlay__headline{
+.c-overhang__headline{
 	text-transform: uppercase;
 	margin-bottom: 1rem;
 }
 
-.c-overlay__text--text{
+.c-overhang__text--text{
 	letter-spacing: 0px;
 	line-height: 1.25;
 	margin-bottom: 1rem;
@@ -88,7 +94,7 @@
 		position: absolute;
 		top: .5rem;
 		left: 0;
-		background: $s-color__white;
+		background: $s-color__red;
 		height: 1px;
 		width: 1rem;
 		display: block;
