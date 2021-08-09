@@ -8,6 +8,14 @@
 
 .c-image-under-text__inner{
 	padding: 0 $s-padding__mobile;
+	@include s-responsive__mobile-up{
+		max-width: 1080px;
+		left: 50%;
+		position: relative;
+		transform: translateX(-50%);
+		padding-top: 16rem;
+		padding-right: 8rem;
+	}
 }
 
 .c-image-under-text__image{
@@ -51,12 +59,9 @@
 	    content: '';
 	}
 	@include s-responsive__mobile-up{
-		margin-top: 16rem;
+		margin: 0;
 		padding-bottom: 4rem;
-		max-width: 1080px;
-		left: 50%;
-		position: relative;
-		transform: translateX(-50%);
+		
 		padding: 4.5rem;
 	}
 }
