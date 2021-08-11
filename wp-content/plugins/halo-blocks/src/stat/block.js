@@ -103,7 +103,7 @@ registerBlockType( 'cgb/block-stat', {
 				              	}else{
 				                	return <button className="c-stat__glyph--button" onClick={open}>
 							        	<img
-							        		classNames={ `wp-image-${attributes.imgId}` }
+							        		className={ `wp-image-${attributes.imgId}` }
 							        		src={attributes.imgUrl}
 							        	/>
 				     				</button>;

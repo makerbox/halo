@@ -11,7 +11,12 @@
 	<nav class="c-navbar" data-navbar>
 		<div class="c-navbar__menu" data-menu>
 			<div class="c-navbar__menu--close" data-menu-toggle>
-				<?php svg('icon-close'); ?>
+				<svg xmlns="http://www.w3.org/2000/svg" width="16.707" height="16.707" viewBox="0 0 16.707 16.707">
+				  <g id="Group_33" data-name="Group 33" transform="translate(-1774.146 64.854)">
+				    <line id="Line_20" data-name="Line 20" x2="16" y2="16" transform="translate(1774.5 -64.5)" fill="none" stroke="#fff" stroke-width="1"/>
+				    <line id="Line_21" data-name="Line 21" x1="16" y2="16" transform="translate(1774.5 -64.5)" fill="none" stroke="#fff" stroke-width="1"/>
+				  </g>
+				</svg>
 			</div>
 			<div class="c-navbar__menu--menu">
 				<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>

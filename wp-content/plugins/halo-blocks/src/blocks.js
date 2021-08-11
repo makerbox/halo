@@ -17,3 +17,5 @@ import './image-and-text/block.js';
 import './image-under-text/block.js';
 import './overlay/block.js';
 import './overhang/block.js';
+import './service-list/block.js';
+import './service/block.js';

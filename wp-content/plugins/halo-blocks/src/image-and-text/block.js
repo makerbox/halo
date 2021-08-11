@@ -100,7 +100,7 @@ registerBlockType( 'cgb/block-image-and-text', {
 					              	}else{
 					                	return <button className="c-image-and-text__image--button" onClick={open}>
 										        	<img
-										        		classNames={ `wp-image-${attributes.imgId}` }
+										        		className={ `wp-image-${attributes.imgId}` }
 										        		src={attributes.imgUrl}
 										        	/>
 								     				</button>;

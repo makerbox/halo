@@ -109,7 +109,7 @@ registerBlockType( 'cgb/block-banner', {
               	}else{
                 	return <button className="c-banner__background--button" onClick={open}>
 					        	<img
-					        		classNames={ `wp-image-${attributes.imgId}` }
+					        		className={ `wp-image-${attributes.imgId}` }
 					        		src={attributes.imgUrl}
 					        	/>
 			     				</button>;
@@ -178,7 +178,7 @@ registerBlockType( 'cgb/block-banner', {
 				
 				<div className="c-banner__background">
 					<img
-						classNames={ `wp-image-${attributes.imgId}` }
+						className={ `wp-image-${attributes.imgId}` }
 			    	src={attributes.imgUrl}
 			    />
 				</div>

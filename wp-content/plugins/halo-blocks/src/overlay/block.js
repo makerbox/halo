@@ -111,7 +111,7 @@ registerBlockType( 'cgb/block-overlay', {
 				              	}else{
 				                	return <button className="c-overlay__background--image__button" onClick={open}>
 									        	<img
-									        		classNames={ `wp-image-${attributes.backgroundImgId}` }
+									        		className={ `wp-image-${attributes.backgroundImgId}` }
 									        		src={attributes.backgroundImgUrl}
 									        	/>
 							     				</button>;
@@ -150,7 +150,7 @@ registerBlockType( 'cgb/block-overlay', {
 						              	}else{
 						                	return <button className="c-overlay__image--button" onClick={open}>
 											        	<img
-											        		classNames={ `wp-image-${attributes.imgId}` }
+											        		className={ `wp-image-${attributes.imgId}` }
 											        		src={attributes.imgUrl}
 											        	/>
 									     				</button>;

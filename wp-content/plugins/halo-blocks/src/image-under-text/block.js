@@ -100,7 +100,7 @@ registerBlockType( 'cgb/block-image-under-text', {
 					              	}else{
 					                	return <button className="c-image-under-text__image--button" onClick={open}>
 										        	<img
-										        		classNames={ `wp-image-${attributes.imgId}` }
+										        		className={ `wp-image-${attributes.imgId}` }
 										        		src={attributes.imgUrl}
 										        	/>
 								     				</button>;
