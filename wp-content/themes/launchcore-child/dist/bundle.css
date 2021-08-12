@@ -955,3 +955,82 @@ body {
 .c-member__title {
   text-transform: uppercase; }
 
+.p-footer {
+  width: 100%;
+  background: rgba(62, 72, 87, 0.74);
+  color: #FFF; }
+  .p-footer a {
+    color: #FFF;
+    text-decoration: none; }
+  .p-footer ul {
+    list-style: none; }
+    .p-footer ul a {
+      text-transform: uppercase;
+      margin-bottom: 1rem; }
+
+.p-footer__inner {
+  padding: 2rem 1.5rem;
+  max-width: 1080px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.p-footer__half {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
+
+@media screen and (min-width: 768px) and (min-device-width: 768px) {
+  .p-footer__left {
+    -ms-flex-preferred-size: 66%;
+        flex-basis: 66%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; } }
+
+@media screen and (min-width: 768px) and (min-device-width: 768px) {
+  .menu-footer-nav-container {
+    -ms-flex-preferred-size: 66%;
+        flex-basis: 66%; }
+    .menu-footer-nav-container ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      height: 5rem; }
+      .menu-footer-nav-container ul li {
+        padding-bottom: 1rem; } }
+
+.p-footer__right {
+  text-align: right; }
+  @media screen and (min-width: 768px) and (min-device-width: 768px) {
+    .p-footer__right {
+      -ms-flex-preferred-size: 33%;
+          flex-basis: 33%; } }
+
+.p-footer__headline {
+  margin-bottom: 1rem;
+  text-transform: uppercase; }
+
+.p-footer__details {
+  margin-bottom: 1rem; }
+
+.p-footer__copyright {
+  font-size: 12px; }
+
