@@ -1,0 +1,30 @@
+.c-service-list{
+	width: 100%;
+	position: relative;
+}
+
+
+
+.c-service-list__inner{
+	padding: 4.5rem $s-padding__mobile;
+	@include s-responsive__mobile-up{
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 1080px;
+		left: 50%;
+		position: relative;
+		transform: translateX(-50%);
+	}
+}
+
+
+.c-service-list__headline{
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+}
+
+.c-service-list__text{
+	@include s-responsive__mobile-up{
+		flex-basis: 100%;
+	}
+}

@@ -43,11 +43,11 @@ registerBlockType( 'cgb/block-service', {
 	attributes: {
 		title: {
 			type: 'string',
-			default: 'title'
+			default: 'Title'
 		},
 		paragraph: {
 			type: 'string',
-			default: 'pragraph text'
+			default: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores. ea rebum. Stet clita kasd gubergren.'
 		},
 		imgUrl: {
 			type: 'string'
@@ -159,6 +159,7 @@ registerBlockType( 'cgb/block-service', {
 						</div>
 						<div className="c-service__paragraph">
 							<RichText.Content
+								value={attributes.paragraph}
 							/>
 						</div>
 					</div>

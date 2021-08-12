@@ -1,0 +1,39 @@
+.c-service{
+	margin-bottom: 2.5rem;
+	@include s-responsive__mobile-up{
+		flex-basis: 50%;
+		padding-right: 2rem;
+	}
+}
+
+.c-service__title{
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: 0px;
+	line-height: 1.25;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+	padding-left: 1.5rem;
+	position: relative;
+	&:before{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		background: $s-color__red;
+		height: 1px;
+		width: 1rem;
+		display: block;
+		content: '';
+		@include s-responsive__mobile-up{
+			width: 2.5rem;
+		}
+	}
+	@include s-responsive__mobile-up{
+		padding-left: 3.5rem;
+	}
+}
+
+.c-service__paragraph{
+	
+}
