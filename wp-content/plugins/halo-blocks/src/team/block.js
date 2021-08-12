@@ -12,8 +12,9 @@ import './style.scss';
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
 
-const {RichText, MediaUpload} = wp.blockEditor;
+const {RichText, MediaUpload, InnerBlocks} = wp.blockEditor;
 
+const ALLOWED_BLOCKS = ['cgb/block-member'];
 
 // const { RichText, MediaUpload, InspectorControls } = wp.blockEditor;
 // const { Panel, PanelBody, PanelRow, SelectControl, CheckboxControl } = wp.components;
@@ -45,16 +46,6 @@ registerBlockType( 'cgb/block-team', {
 			type: 'string',
 			default: 'headline'
 		},
-		text: {
-			type: 'string',
-			default: 'text'
-		},
-		imgUrl: {
-			type: 'string'
-		},
-		imgId: {
-			type: 'string'
-		}
 	},
 	/**
 	 * The edit function describes the structure of your block in the context of the editor.
@@ -77,14 +68,16 @@ registerBlockType( 'cgb/block-team', {
 		return (
 			<div className="c-team">
 				<div className="c-team__inner">
-					<div className="c-team__image">
-					</div>
 					<div className="c-team__text">
 						<div className="c-team__headline">
-						</div>
-						<div className="c-team__text--text">
+							<RichText
+								className="c-team__headline--richtext"
+								onChange={changeHeadline}
+								value={attributes.headline}
+							/>
 						</div>
 					</div>
+					<InnerBlocks allowedBlocks={ ALLOWED_BLOCKS } />
 				</div>
 			</div>
 		);
@@ -104,7 +97,16 @@ registerBlockType( 'cgb/block-team', {
 	save: ( {attributes} ) => {
 		return (
 			<div className="c-team">
-				
+				<div className="c-team__inner">
+					<div className="c-team__text">
+						<div className="c-team__headline">
+							<RichText.Content
+								value={attributes.headline}
+							/>
+						</div>
+					</div>
+					<InnerBlocks.Content />
+				</div>
 			</div>
 		);
 	},

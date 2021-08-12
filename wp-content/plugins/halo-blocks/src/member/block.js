@@ -5,7 +5,7 @@
  * Simple block, renders and saves the same content without any interactivity.
  */
 
-//  Import CSS.
+// Import CSS.
 import './editor.scss';
 import './style.scss';
 
@@ -41,13 +41,17 @@ registerBlockType( 'cgb/block-member', {
 		__( 'member' ),
 	],
 	attributes: {
-		headline: {
+		name: {
 			type: 'string',
-			default: 'headline'
+			default: 'Member Name'
 		},
-		text: {
+		title: {
 			type: 'string',
-			default: 'text'
+			default: 'job title'
+		},
+		paragraph: {
+			type: 'string',
+			default: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores. ea rebum. Stet clita kasd gubergren.'
 		},
 		imgUrl: {
 			type: 'string'
@@ -68,21 +72,75 @@ registerBlockType( 'cgb/block-member', {
 	 * @returns {Mixed} JSX Component.
 	 */
 	edit: ( {attributes, setAttributes} ) => {
-		const changeHeadline = (newHeadline) => {
+		const changeName = (newText) => {
 			setAttributes({
-				headline: newHeadline
+				name: newText
 			});
+		};
+		const changeTitle = (newText) => {
+			setAttributes({
+				title: newText
+			});
+		};
+		const changeParagraph = (newText) => {
+			setAttributes({
+				paragraph: newText
+			});
+		};
+		const changeImage = (newImg) => {
+			setAttributes({
+				imgUrl: newImg.sizes.full.url,
+				imgId: newImg.id.toString()
+			})
 		};
 		// Creates a <p class='wp-block-cgb-block-halo-blocks'></p>.
 		return (
 			<div className="c-member">
 				<div className="c-member__inner">
 					<div className="c-member__image">
+						<MediaUpload 
+				            onSelect={changeImage}
+				            render={
+				            	({open}) => {
+				              		if(typeof attributes.imgUrl == 'undefined'){
+					              		return <button className="c-overlay__background--image__button" onClick={ open }>
+					              				Choose image..
+					              			</button>;
+					              	}else{
+					                	return <button className="c-overlay__background--image__button" onClick={open}>
+								        	<img
+								        		className={ `wp-image-${attributes.imgId}` }
+								        		src={attributes.imgUrl}
+								        	/>
+						     				</button>;
+					                }
+				            	}	
+					        }
+				        />
 					</div>
 					<div className="c-member__text">
-						<div className="c-member__headline">
+						<div className="c-member__header">
+							<div className="c-member__name">
+								<RichText
+									className="c-member__name--richtext"
+									onChange={changeName}
+									value={attributes.name}
+								/>
+							</div>
+							<div className="c-member__title">
+								<RichText
+									className="c-member__title--richtext"
+									onChange={changeTitle}
+									value={attributes.title}
+								/>
+							</div>
 						</div>
-						<div className="c-member__text--text">
+						<div className="c-member__paragraph">
+							<RichText
+								className="c-member__paragraph--richtext"
+								onChange={changeParagraph}
+								value={attributes.paragraph}
+							/>
 						</div>
 					</div>
 				</div>
@@ -104,7 +162,33 @@ registerBlockType( 'cgb/block-member', {
 	save: ( {attributes} ) => {
 		return (
 			<div className="c-member">
-				
+				<div className="c-member__inner">
+					<div className="c-member__image">
+						<img
+							src={attributes.imgUrl}
+				        	className={`wp-image-` + attributes.imgId}
+				        />
+					</div>
+					<div className="c-member__text">
+						<div className="c-member__header">
+							<div className="c-member__name">
+								<RichText.Content
+									value={attributes.name}
+								/>
+							</div>
+							<div className="c-member__title">
+								<RichText.Content
+									value={attributes.title}
+								/>
+							</div>
+						</div>
+						<div className="c-member__paragraph">
+							<RichText.Content
+								value={attributes.paragraph}
+							/>
+						</div>
+					</div>
+				</div>
 			</div>
 		);
 	},

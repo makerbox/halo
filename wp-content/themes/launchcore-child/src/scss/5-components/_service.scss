@@ -1,5 +1,8 @@
 .c-service{
 	margin-bottom: 2.5rem;
+	&:last-of-type{
+		margin-bottom: 0;
+	}
 	@include s-responsive__mobile-up{
 		flex-basis: 50%;
 		padding-right: 2rem;

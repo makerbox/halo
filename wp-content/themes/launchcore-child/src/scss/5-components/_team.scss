@@ -1,0 +1,30 @@
+.c-team{
+	width: 100%;
+	position: relative;
+}
+
+
+
+.c-team__inner{
+	padding: 0 $s-padding__mobile;
+	padding-bottom: 4.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1080px;
+	left: 50%;
+	position: relative;
+	transform: translateX(-50%);
+	@include s-responsive__mobile-up{
+		
+	}
+}
+
+
+.c-team__headline{
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+}
+
+.c-team__text{
+	flex-basis: 100%;
+}
