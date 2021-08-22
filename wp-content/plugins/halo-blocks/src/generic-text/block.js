@@ -42,7 +42,8 @@ registerBlockType( 'cgb/block-generic-text', {
 	],
 	attributes: {
 		sectionId: {
-			type: 'string'
+			type: 'string',
+			default: 'section'
 		},
 		headline: {
 			type: 'string',
@@ -105,6 +106,19 @@ registerBlockType( 'cgb/block-generic-text', {
 						</div>
 					</div>
 				</div>
+				<InspectorControls>
+				<Panel>
+				<PanelRow>
+				<PanelBody>
+				ID for nav target
+				<RichText
+					value={attributes.sectionId}
+					onChange={changeId}
+				/>
+				</PanelBody>
+				</PanelRow>
+				</Panel>
+				</InspectorControls>
 			</div>
 		);
 	},
@@ -122,7 +136,7 @@ registerBlockType( 'cgb/block-generic-text', {
 	 */
 	save: ( {attributes} ) => {
 		return (
-			<div className="c-generic-text">
+			<div className="c-generic-text" id={attributes.sectionId}>
 				<div className="c-generic-text__background">
 				</div>
 				<div className="c-generic-text__inner">

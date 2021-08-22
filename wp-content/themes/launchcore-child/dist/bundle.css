@@ -955,15 +955,15 @@ body {
 .c-member__title {
   text-transform: uppercase; }
 
-.c-contact-form {
+.wp-block-contact-form-7-contact-form-selector {
   margin-bottom: 5em; }
-  .c-contact-form p {
+  .wp-block-contact-form-7-contact-form-selector p {
     position: relative; }
-  .c-contact-form .ajax-loader {
+  .wp-block-contact-form-7-contact-form-selector .ajax-loader {
     position: absolute;
     bottom: 1rem; }
 
-.c-contact-form form {
+.wp-block-contact-form-7-contact-form-selector form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -979,7 +979,7 @@ body {
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%); }
 
-.c-contact-form .wpcf7-submit {
+.wp-block-contact-form-7-contact-form-selector .wpcf7-submit {
   border: none;
   max-width: 16em;
   color: #FFF;
