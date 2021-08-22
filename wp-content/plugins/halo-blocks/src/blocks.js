@@ -21,3 +21,4 @@ import './service-list/block.js';
 import './service/block.js';
 import './team/block.js';
 import './member/block.js';
+import './generic-text/block.js';
