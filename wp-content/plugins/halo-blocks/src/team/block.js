@@ -96,7 +96,7 @@ registerBlockType( 'cgb/block-team', {
 	 */
 	save: ( {attributes} ) => {
 		return (
-			<div className="c-team">
+			<div className="c-team" id="our-team">
 				<div className="c-team__inner">
 					<div className="c-team__text">
 						<div className="c-team__headline">

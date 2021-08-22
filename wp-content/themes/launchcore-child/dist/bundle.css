@@ -56,7 +56,7 @@ body {
   right: -100vw;
   padding: 1.5rem;
   color: #FFF;
-  background: rgba(62, 72, 87, 0.74); }
+  background: rgba(62, 72, 87, 0.9); }
   .is-open .c-navbar__menu {
     right: 0;
     z-index: 9; }

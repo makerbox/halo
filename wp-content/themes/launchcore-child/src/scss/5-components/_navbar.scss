@@ -18,7 +18,8 @@
 	right: -100vw;
 	padding: $s-padding__mobile;
 	color: $s-color__white;
-	background: $s-color__trans;
+	// background: $s-color__trans;
+	background: rgba(62, 72, 87, 0.9);
 	.is-open &{
 		right: 0;
 		z-index: 9;

@@ -66,7 +66,7 @@ registerBlockType( 'cgb/block-service-list', {
 		};
 		// Creates a <p class='wp-block-cgb-block-halo-blocks'></p>.
 		return (
-			<div className="c-service-list">
+			<div className="c-service-list" id="products-and-services">
 				<div className="c-service-list__inner">
 					<div className="c-service-list__text">
 						<div className="c-service-list__headline">
@@ -96,7 +96,7 @@ registerBlockType( 'cgb/block-service-list', {
 	 */
 	save: ( {attributes} ) => {
 		return (
-			<div className="c-service-list">
+			<div className="c-service-list" id="products-and-services">
 				<div className="c-service-list__inner">
 					<div className="c-service-list__text">
 						<div className="c-service-list__headline">

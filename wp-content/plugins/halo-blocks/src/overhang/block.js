@@ -159,7 +159,7 @@ registerBlockType( 'cgb/block-overhang', {
 	 */
 	save: ( {attributes} ) => {
 		return (
-			<div className="c-overhang" id="hydroelectric-operations">
+			<div className="c-overhang" id="our-technology">
 				<div className="c-overhang__background">
 				</div>
 				<div className="c-overhang__inner">
