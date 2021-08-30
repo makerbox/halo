@@ -12,7 +12,7 @@ import './style.scss';
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
 
-const {RichText, MediaUpload} = wp.blockEditor;
+const {RichText, MediaUpload, InnerBlocks} = wp.blockEditor;
 
 
 // const { RichText, MediaUpload, InspectorControls } = wp.blockEditor;
@@ -100,25 +100,14 @@ registerBlockType( 'cgb/block-overlay', {
 		return (
 			<div className="c-overlay">
 				<div className="c-overlay__background">
-					<MediaUpload 
-			            onSelect={changeBackgroundImage}
-			            render={
-			            	({open}) => {
-			              		if(typeof attributes.backgroundImgUrl == 'undefined'){
-				              		return <button className="c-overlay__background--image__button" onClick={ open }>
-				              				Choose background image..
-				              			</button>;
-				              	}else{
-				                	return <button className="c-overlay__background--image__button" onClick={open}>
-									        	<img
-									        		className={ `wp-image-${attributes.backgroundImgId}` }
-									        		src={attributes.backgroundImgUrl}
-									        	/>
-							     				</button>;
-				                }
-			            	}	
-				        }
-				        />
+					 <InnerBlocks
+						allowedBlocks={ ['core/video'] }
+						template={ [
+								['core/video']
+							] }
+						templateLock="all"
+						className="c-overlay__background--video__innerblocks"
+					/>
 				</div>
 				<div className="c-overlay__inner">
 					<div className="c-overlay__foreground">
@@ -180,10 +169,13 @@ registerBlockType( 'cgb/block-overlay', {
 		return (
 			<div className="c-overlay" id="hydroelectric-operations">
 				<div className="c-overlay__background">
-					<img
-						src={attributes.backgroundImgUrl}
-			        	className={`wp-image-` + attributes.backgroundImgId}
-			        />
+					<InnerBlocks.Content 
+						allowedBlocks={ ['core/video'] }
+						template={ [
+								['core/video']
+							] }
+						templateLock="all"
+					/>
 				</div>
 				<div className="c-overlay__inner">
 					<div className="c-overlay__foreground">

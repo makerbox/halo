@@ -131,6 +131,8 @@
   margin: 0 auto;
   max-width: 740px;
   padding: 2rem; }
+  .wp-block-cgb-block-halo-blocks .c-overlay__inner {
+    margin-top: 10em; }
 /**
  * #.# Common SCSS
  *
