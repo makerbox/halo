@@ -28,7 +28,7 @@
 					$custom_logo_id = get_theme_mod( 'custom_logo' );
 					$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 				?>
-				<img src="<?php echo esc_url( $logo[0] ); ?>">
+				<img class="wp-image-<?php echo $custom_logo_id; ?>" loading="lazy" src="<?php echo esc_url( $logo[0] ); ?>">
 			</a>
 			<div class="c-navbar__hamburger" data-menu-toggle>
 				menu
