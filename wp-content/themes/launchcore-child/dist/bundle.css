@@ -587,7 +587,8 @@ body {
   z-index: 2;
   padding: 1.5rem;
   padding-top: 4rem; }
-  .c-image-under-text__text strong {
+  .c-image-under-text__text strong, .c-image-under-text__text a {
+    text-decoration: none;
     color: #DB2526;
     font-weight: normal; }
   .c-image-under-text__text br {
