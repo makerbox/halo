@@ -1207,7 +1207,19 @@ body {
         padding-bottom: 1rem; } }
 
 .p-footer__right {
-  text-align: right; }
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .p-footer__right img {
+    width: 5rem;
+    height: 5rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+    display: block; }
   @media screen and (min-width: 768px) and (min-device-width: 768px) {
     .p-footer__right {
       -ms-flex-preferred-size: 33%;

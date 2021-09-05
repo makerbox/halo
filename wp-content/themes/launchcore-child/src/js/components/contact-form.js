@@ -1,10 +1,9 @@
 $(document).ready(function(){
-	console.log('contact-form.js');
 	let inputFields = $(document).find('.c-contact-form__input-group input, .c-contact-form__input-group textarea');
 	// when you click a field remove the label
 	$(document).on('click touchend', '.c-contact-form__input-group', function(e){
-		e.preventDefault();
-		e.stopPropagation();
+		// e.preventDefault();
+		// e.stopPropagation();
 		inputFields.each(function(){
 			let thisField = $(this);
 			let thisVal = thisField.val();
@@ -16,6 +15,7 @@ $(document).ready(function(){
 		});
 		let self = $(this);
 		self.find('.c-contact-form__label').addClass('is-hidden');
+		self.find('input').focus().select();
 
 		
 	})

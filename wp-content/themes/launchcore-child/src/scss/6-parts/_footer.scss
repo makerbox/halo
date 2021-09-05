@@ -54,6 +54,14 @@
 }
 .p-footer__right{
 	text-align: right;
+	display: flex;
+	justify-content: flex-end;
+	img{
+		width: 5rem;
+		height: 5rem;
+		object-fit: contain;
+		display: block;
+	}
 	@include s-responsive__mobile-up{
 		flex-basis: 33%;
 	}
