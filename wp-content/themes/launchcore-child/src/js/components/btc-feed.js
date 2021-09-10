@@ -4,7 +4,7 @@ $(document).ready(function(){
 		dataType: "json",
 		url: "https://api.coindesk.com/v1/bpi/currentprice/USD.json",
 		success: function(data){
-			target.text("$" + parseInt(data.bpi.USD.rate).toFixed(0));
+			target.text("$" + parseInt(data.bpi.USD.rate_float).toFixed(0));
 		}
 	});
 })
