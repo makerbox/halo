@@ -6,8 +6,7 @@
 						company details
 					</div>
 					<div class="p-footer__details">
-						<div>P. <a href="tel:12341234">1234 1234</a></div>
-						<div>E. <a href="mailto:lorem@ipsum.com">lorem@ipsum.com</a></div>
+						<?php dynamic_sidebar( 'primary-widget-area' ); ?>
 					</div>
 				</div>
 				<?php wp_nav_menu( array( 'theme_location' => 'footer-menu') ); ?>
